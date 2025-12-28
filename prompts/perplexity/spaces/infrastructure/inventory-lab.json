@@ -1,0 +1,5905 @@
+{
+  "schema": "pplx_infra_inventory_v2",
+  "collected_at_utc": "2025-12-28T03:38:44.385988+00:00",
+  "identity": {
+    "hostname": "lab",
+    "fqdn": "lab.marina",
+    "user": "cbn"
+  },
+  "os": {
+    "platform": "Linux",
+    "platform_release": "6.12.47+rpt-rpi-v8",
+    "platform_version": "#1 SMP PREEMPT Debian 1:6.12.47-1+rpt1~bookworm (2025-09-16)",
+    "machine": "aarch64",
+    "python": "3.11.2",
+    "distro_id": "debian",
+    "distro_name": "Debian GNU/Linux 12 (bookworm)",
+    "distro_version": "12"
+  },
+  "uptime_seconds": 1396620,
+  "cpu": {
+    "physical_cores": 4,
+    "logical_cores": 4,
+    "model": "Cortex-A72"
+  },
+  "memory": {
+    "total_bytes": 8200753152
+  },
+  "gpu": null,
+  "motherboard": {
+    "vendor": "Raspberry Pi Foundation",
+    "name": "Raspberry Pi 4 Model B Rev 1.4",
+    "version": null
+  },
+  "storage": {
+    "physical_disks": [
+      {
+        "name": "mmcblk0",
+        "model": null,
+        "serial": "0xaa00946e",
+        "size": "30G",
+        "type": "disk",
+        "tran": null,
+        "rota": false,
+        "mountpoint": null,
+        "fstype": null,
+        "children": [
+          {
+            "name": "mmcblk0p1",
+            "model": null,
+            "serial": null,
+            "size": "512M",
+            "type": "part",
+            "tran": null,
+            "rota": false,
+            "mountpoint": "/boot/firmware",
+            "fstype": "vfat"
+          },
+          {
+            "name": "mmcblk0p2",
+            "model": null,
+            "serial": null,
+            "size": "29.5G",
+            "type": "part",
+            "tran": null,
+            "rota": false,
+            "mountpoint": "/",
+            "fstype": "ext4"
+          }
+        ]
+      }
+    ],
+    "mounts": [
+      {
+        "device": "/dev/mmcblk0p2",
+        "mountpoint": "/",
+        "fstype": "ext4",
+        "opts": "rw,noatime",
+        "usage_bytes": {
+          "total": 31115202560,
+          "used": 22165798912,
+          "free": 7349129216
+        }
+      },
+      {
+        "device": "/dev/mmcblk0p1",
+        "mountpoint": "/boot/firmware",
+        "fstype": "vfat",
+        "opts": "rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,errors=remount-ro",
+        "usage_bytes": {
+          "total": 534763520,
+          "used": 61618176,
+          "free": 473145344
+        }
+      }
+    ]
+  },
+  "network": {
+    "interfaces": {
+      "lo": {
+        "mac": "00:00:00:00:00:00",
+        "ipv4": [
+          {
+            "ip": "127.0.0.1",
+            "netmask": "255.0.0.0"
+          }
+        ],
+        "ipv6": [
+          {
+            "ip": "::1",
+            "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
+          }
+        ],
+        "is_up": true,
+        "speed_mbps": 0
+      },
+      "eth0": {
+        "mac": "dc:a6:32:c7:63:94",
+        "ipv4": [
+          {
+            "ip": "10.10.1.130",
+            "netmask": "255.255.255.0"
+          }
+        ],
+        "ipv6": [
+          {
+            "ip": "fe80::faf0:3445:5029:15a7%eth0",
+            "netmask": "ffff:ffff:ffff:ffff::"
+          }
+        ],
+        "is_up": true,
+        "speed_mbps": 1000
+      },
+      "wlan0": {
+        "mac": "dc:a6:32:c7:63:95",
+        "ipv4": [
+          {
+            "ip": "192.168.18.7",
+            "netmask": "255.255.255.0"
+          }
+        ],
+        "ipv6": [
+          {
+            "ip": "fe80::5956:b2a5:6c9e:378e%wlan0",
+            "netmask": "ffff:ffff:ffff:ffff::"
+          }
+        ],
+        "is_up": true,
+        "speed_mbps": 0
+      },
+      "docker0": {
+        "mac": "7e:09:9b:93:0e:c5",
+        "ipv4": [
+          {
+            "ip": "172.17.0.1",
+            "netmask": "255.255.0.0"
+          }
+        ],
+        "ipv6": [
+          {
+            "ip": "fe80::7c09:9bff:fe93:ec5%docker0",
+            "netmask": "ffff:ffff:ffff:ffff::"
+          }
+        ],
+        "is_up": false,
+        "speed_mbps": 0
+      },
+      "br-84f48d9c8962": {
+        "mac": "c2:cf:44:d0:bd:85",
+        "ipv4": [
+          {
+            "ip": "172.18.0.1",
+            "netmask": "255.255.0.0"
+          }
+        ],
+        "ipv6": [
+          {
+            "ip": "fe80::c0cf:44ff:fed0:bd85%br-84f48d9c8962",
+            "netmask": "ffff:ffff:ffff:ffff::"
+          }
+        ],
+        "is_up": true,
+        "speed_mbps": 10000
+      },
+      "veth19a859c": {
+        "mac": "c6:f7:c8:12:e6:86",
+        "ipv4": [],
+        "ipv6": [
+          {
+            "ip": "fe80::c4f7:c8ff:fe12:e686%veth19a859c",
+            "netmask": "ffff:ffff:ffff:ffff::"
+          }
+        ],
+        "is_up": true,
+        "speed_mbps": 10000
+      },
+      "veth40f7622": {
+        "mac": "ae:06:96:12:f9:8b",
+        "ipv4": [],
+        "ipv6": [
+          {
+            "ip": "fe80::ac06:96ff:fe12:f98b%veth40f7622",
+            "netmask": "ffff:ffff:ffff:ffff::"
+          }
+        ],
+        "is_up": true,
+        "speed_mbps": 10000
+      }
+    },
+    "default_gateway": "10.10.1.1",
+    "dns_servers": [
+      "10.10.1.1",
+      "192.168.18.1"
+    ],
+    "hardware": null
+  },
+  "usb_devices": [
+    {
+      "id": "2109:0817",
+      "name": "VIA Labs, Inc. USB3.0 Hub             ",
+      "raw": "Bus 002 Device 031: ID 2109:0817 VIA Labs, Inc. USB3.0 Hub             "
+    },
+    {
+      "id": "2109:0817",
+      "name": "VIA Labs, Inc. USB3.0 Hub             ",
+      "raw": "Bus 002 Device 030: ID 2109:0817 VIA Labs, Inc. USB3.0 Hub             "
+    },
+    {
+      "id": "2109:0817",
+      "name": "VIA Labs, Inc. USB3.0 Hub             ",
+      "raw": "Bus 002 Device 027: ID 2109:0817 VIA Labs, Inc. USB3.0 Hub             "
+    },
+    {
+      "id": "2109:0817",
+      "name": "VIA Labs, Inc. USB3.0 Hub             ",
+      "raw": "Bus 002 Device 026: ID 2109:0817 VIA Labs, Inc. USB3.0 Hub             "
+    },
+    {
+      "id": "1d6b:0003",
+      "name": "Linux Foundation 3.0 root hub",
+      "raw": "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub"
+    },
+    {
+      "id": "1a86:7523",
+      "name": "QinHeng Electronics CH340 serial converter",
+      "raw": "Bus 001 Device 006: ID 1a86:7523 QinHeng Electronics CH340 serial converter"
+    },
+    {
+      "id": "0483:5740",
+      "name": "STMicroelectronics Virtual COM Port",
+      "raw": "Bus 001 Device 012: ID 0483:5740 STMicroelectronics Virtual COM Port"
+    },
+    {
+      "id": "0403:6001",
+      "name": "Future Technology Devices International, Ltd FT232 Serial (UART) IC",
+      "raw": "Bus 001 Device 016: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC"
+    },
+    {
+      "id": "0403:6001",
+      "name": "Future Technology Devices International, Ltd FT232 Serial (UART) IC",
+      "raw": "Bus 001 Device 015: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC"
+    },
+    {
+      "id": "0403:6001",
+      "name": "Future Technology Devices International, Ltd FT232 Serial (UART) IC",
+      "raw": "Bus 001 Device 014: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC"
+    },
+    {
+      "id": "0403:6001",
+      "name": "Future Technology Devices International, Ltd FT232 Serial (UART) IC",
+      "raw": "Bus 001 Device 013: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC"
+    },
+    {
+      "id": "2109:2817",
+      "name": "VIA Labs, Inc. USB2.0 Hub             ",
+      "raw": "Bus 001 Device 011: ID 2109:2817 VIA Labs, Inc. USB2.0 Hub             "
+    },
+    {
+      "id": "0403:6001",
+      "name": "Future Technology Devices International, Ltd FT232 Serial (UART) IC",
+      "raw": "Bus 001 Device 010: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC"
+    },
+    {
+      "id": "0403:6001",
+      "name": "Future Technology Devices International, Ltd FT232 Serial (UART) IC",
+      "raw": "Bus 001 Device 008: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC"
+    },
+    {
+      "id": "2109:2817",
+      "name": "VIA Labs, Inc. USB2.0 Hub             ",
+      "raw": "Bus 001 Device 004: ID 2109:2817 VIA Labs, Inc. USB2.0 Hub             "
+    },
+    {
+      "id": "1bcf:0c18",
+      "name": "Sunplus Innovation Technology Inc. MF500 camera",
+      "raw": "Bus 001 Device 007: ID 1bcf:0c18 Sunplus Innovation Technology Inc. MF500 camera"
+    },
+    {
+      "id": "0483:5740",
+      "name": "STMicroelectronics Virtual COM Port",
+      "raw": "Bus 001 Device 009: ID 0483:5740 STMicroelectronics Virtual COM Port"
+    },
+    {
+      "id": "2109:2817",
+      "name": "VIA Labs, Inc. USB2.0 Hub             ",
+      "raw": "Bus 001 Device 005: ID 2109:2817 VIA Labs, Inc. USB2.0 Hub             "
+    },
+    {
+      "id": "2109:2817",
+      "name": "VIA Labs, Inc. USB2.0 Hub             ",
+      "raw": "Bus 001 Device 003: ID 2109:2817 VIA Labs, Inc. USB2.0 Hub             "
+    },
+    {
+      "id": "2109:3431",
+      "name": "VIA Labs, Inc. Hub",
+      "raw": "Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub"
+    },
+    {
+      "id": "1d6b:0002",
+      "name": "Linux Foundation 2.0 root hub",
+      "raw": "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    }
+  ],
+  "system_packages": [
+    {
+      "name": "adduser",
+      "version": "3.134",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "alsa-topology-conf",
+      "version": "1.2.5.1-2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "alsa-ucm-conf",
+      "version": "1.2.8-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "alsa-utils",
+      "version": "1.2.8-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "apparmor",
+      "version": "3.0.8-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "apt",
+      "version": "2.6.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "apt-listchanges",
+      "version": "3.24",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "apt-utils",
+      "version": "2.6.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "avahi-daemon",
+      "version": "0.8-10+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "base-files",
+      "version": "12.4+deb12u12",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "base-passwd",
+      "version": "3.6.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "bash",
+      "version": "5.2.15-2+b9",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "bash-completion",
+      "version": "1:2.11-6",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "bat",
+      "version": "0.22.1-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "binutils",
+      "version": "2.40-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "binutils-aarch64-linux-gnu",
+      "version": "2.40-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "binutils-common",
+      "version": "2.40-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "bluez",
+      "version": "5.66-1+rpt1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "bluez-firmware",
+      "version": "1.2-9+rpt4",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "bsdextrautils",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "bsdutils",
+      "version": "1:2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "btop",
+      "version": "1.2.13-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "build-essential",
+      "version": "12.9",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "busybox",
+      "version": "1:1.35.0-4+b5",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "bzip2",
+      "version": "1.0.8-5+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20230311+deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "cifs-utils",
+      "version": "2:7.0-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "console-setup",
+      "version": "1.221rpt1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "console-setup-linux",
+      "version": "1.221rpt1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "containerd.io",
+      "version": "2.2.0-2~debian.12~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "coreutils",
+      "version": "9.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "cpio",
+      "version": "2.13+dfsg-7.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "cpp",
+      "version": "4:12.2.0-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "cpp-12",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "cron",
+      "version": "3.0pl1-162",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "cron-daemon-common",
+      "version": "3.0pl1-162",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "curl",
+      "version": "7.88.1-10+deb12u14",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dash",
+      "version": "0.5.12-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dbus",
+      "version": "1.14.10-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dbus-bin",
+      "version": "1.14.10-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dbus-daemon",
+      "version": "1.14.10-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dbus-session-bus-common",
+      "version": "1.14.10-1~deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dbus-system-bus-common",
+      "version": "1.14.10-1~deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dbus-user-session",
+      "version": "1.14.10-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dc",
+      "version": "1.07.1-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dconf-cli",
+      "version": "0.40.0-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "debconf",
+      "version": "1.5.82",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "debconf-i18n",
+      "version": "1.5.82",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "debconf-utils",
+      "version": "1.5.82",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "debian-archive-keyring",
+      "version": "2023.3+deb12u2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "debianutils",
+      "version": "5.7-0.5~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "device-tree-compiler",
+      "version": "1.6.1-4+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "diffutils",
+      "version": "1:3.8-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dirmngr",
+      "version": "2.2.40-1.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "distro-info-data",
+      "version": "0.58+deb12u5",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dmidecode",
+      "version": "3.4-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dmsetup",
+      "version": "2:1.02.185-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dns-root-data",
+      "version": "2024071801~deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dnsmasq-base",
+      "version": "2.90-4~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "docker-buildx-plugin",
+      "version": "0.30.1-1~debian.12~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "docker-ce",
+      "version": "5:29.1.2-1~debian.12~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "docker-ce-cli",
+      "version": "5:29.1.2-1~debian.12~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "docker-ce-rootless-extras",
+      "version": "5:29.1.2-1~debian.12~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "docker-compose-plugin",
+      "version": "5.0.0-1~debian.12~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "docker-model-plugin",
+      "version": "1.0.4-1~debian.12~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dos2unix",
+      "version": "7.4.3-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dosfstools",
+      "version": "4.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dphys-swapfile",
+      "version": "20100506-7.1+rpt3",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dpkg",
+      "version": "1.22.6~bpo12+rpt3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dpkg-dev",
+      "version": "1.22.6~bpo12+rpt3",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "e2fsprogs",
+      "version": "1.47.0-2+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ed",
+      "version": "1.19-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "eject",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ethtool",
+      "version": "1:6.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "exfatprogs",
+      "version": "1.2.0-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "fake-hwclock",
+      "version": "0.12+nmu1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "fakeroot",
+      "version": "1.31-1.2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "fbset",
+      "version": "2.1-33",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "fdisk",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "file",
+      "version": "1:5.44-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "findutils",
+      "version": "4.9.0-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "firmware-atheros",
+      "version": "1:20240709-2~bpo12+1+rpt4",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "firmware-brcm80211",
+      "version": "1:20240709-2~bpo12+1+rpt4",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "firmware-libertas",
+      "version": "1:20240709-2~bpo12+1+rpt4",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "firmware-mediatek",
+      "version": "1:20240709-2~bpo12+1+rpt4",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "firmware-realtek",
+      "version": "1:20240709-2~bpo12+1+rpt4",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "flashrom",
+      "version": "1.3.0-2.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "fontconfig-config",
+      "version": "2.14.1-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "fonts-dejavu-core",
+      "version": "2.37-6",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "fuse3",
+      "version": "3.14.0-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "g++",
+      "version": "4:12.2.0-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "g++-12",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gcc",
+      "version": "4:12.2.0-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gcc-12",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gcc-12-base",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gdb",
+      "version": "13.1-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gdisk",
+      "version": "1.0.9-2.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gettext-base",
+      "version": "0.21-12",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "git",
+      "version": "1:2.39.5-0+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "git-man",
+      "version": "1:2.39.5-0+deb12u2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gnupg",
+      "version": "2.2.40-1.1+deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gnupg-l10n",
+      "version": "2.2.40-1.1+deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gnupg-utils",
+      "version": "2.2.40-1.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gpg",
+      "version": "2.2.40-1.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gpg-agent",
+      "version": "2.2.40-1.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gpg-wks-client",
+      "version": "2.2.40-1.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gpg-wks-server",
+      "version": "2.2.40-1.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gpgconf",
+      "version": "2.2.40-1.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gpgsm",
+      "version": "2.2.40-1.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gpgv",
+      "version": "2.2.40-1.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gpiod",
+      "version": "1.6.3-1+b3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "grep",
+      "version": "3.8-5",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "groff-base",
+      "version": "1.22.4-10",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gzip",
+      "version": "1.12-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "hostname",
+      "version": "3.23+nmu1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "htop",
+      "version": "3.2.2-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "init",
+      "version": "1.65.2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "init-system-helpers",
+      "version": "1.65.2+deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "initramfs-tools",
+      "version": "0.142+rpt4+deb12u3",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "initramfs-tools-core",
+      "version": "0.142+rpt4+deb12u3",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "iproute2",
+      "version": "6.1.0-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "iptables",
+      "version": "1.8.9-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "iputils-ping",
+      "version": "3:20221126-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "isc-dhcp-client",
+      "version": "4.4.3-P1-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "isc-dhcp-common",
+      "version": "4.4.3-P1-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "iso-codes",
+      "version": "4.15.0-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "iw",
+      "version": "5.19-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "javascript-common",
+      "version": "11+nmu1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "kbd",
+      "version": "2.5.1-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "keyboard-configuration",
+      "version": "1.221rpt1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "keyutils",
+      "version": "1.6.3-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "klibc-utils",
+      "version": "2.0.12-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "kmod",
+      "version": "30+20221128-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "kms++-utils",
+      "version": "0~git20250807.1813ada-1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "less",
+      "version": "590-2.1~deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libabsl20220623",
+      "version": "20220623.1-1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libacl1",
+      "version": "2.3.1-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libalgorithm-diff-perl",
+      "version": "1.201-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libalgorithm-diff-xs-perl",
+      "version": "0.04-8+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libalgorithm-merge-perl",
+      "version": "0.08-5",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libaom3",
+      "version": "3.6.0-1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libapparmor1",
+      "version": "3.0.8-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libapt-pkg6.0",
+      "version": "2.6.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libargon2-1",
+      "version": "0~20171227-0.3+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libasan8",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libasound2",
+      "version": "1.2.8-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libasound2-data",
+      "version": "1.2.8-1+rpt1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libassuan0",
+      "version": "2.5.5-5",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libatasmart4",
+      "version": "0.19-5",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libatomic1",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libatopology2",
+      "version": "1.2.8-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libattr1",
+      "version": "1:2.5.1-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libaudit-common",
+      "version": "1:3.0.9-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libaudit1",
+      "version": "1:3.0.9-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libavahi-common-data",
+      "version": "0.8-10+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libavahi-common3",
+      "version": "0.8-10+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libavahi-core7",
+      "version": "0.8-10+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libavif15",
+      "version": "0.11.1-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libbabeltrace1",
+      "version": "1.5.11-1+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libbinutils",
+      "version": "2.40-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libblkid1",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libblockdev-crypto2",
+      "version": "2.28-2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libblockdev-fs2",
+      "version": "2.28-2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libblockdev-loop2",
+      "version": "2.28-2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libblockdev-part-err2",
+      "version": "2.28-2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libblockdev-part2",
+      "version": "2.28-2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libblockdev-swap2",
+      "version": "2.28-2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libblockdev-utils2",
+      "version": "2.28-2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libblockdev2",
+      "version": "2.28-2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libbluetooth3",
+      "version": "5.66-1+rpt1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libboost-filesystem1.74.0",
+      "version": "1.74.0+ds1-21",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libboost-log1.74.0",
+      "version": "1.74.0+ds1-21",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libboost-program-options1.74.0",
+      "version": "1.74.0+ds1-21",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libboost-regex1.74.0",
+      "version": "1.74.0+ds1-21",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libboost-thread1.74.0",
+      "version": "1.74.0+ds1-21",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libbpf1",
+      "version": "1:1.1.2-0+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libbrotli1",
+      "version": "1.0.9-2+b6",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libbsd0",
+      "version": "0.11.7-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libbz2-1.0",
+      "version": "1.0.8-5+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libc-bin",
+      "version": "2.36-9+rpt2+deb12u13",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libc-dev-bin",
+      "version": "2.36-9+rpt2+deb12u13",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libc-devtools",
+      "version": "2.36-9+rpt2+deb12u13",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libc-l10n",
+      "version": "2.36-9+rpt2+deb12u13",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libc6",
+      "version": "2.36-9+rpt2+deb12u13",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libc6-dbg",
+      "version": "2.36-9+rpt2+deb12u13",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libc6-dev",
+      "version": "2.36-9+rpt2+deb12u13",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcamera-ipa",
+      "version": "0.5.2+rpt20250903-1~bpo12+1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcamera0.5",
+      "version": "0.5.2+rpt20250903-1~bpo12+1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcap-ng0",
+      "version": "0.8.3-1+b3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcap2",
+      "version": "1:2.66-4+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcap2-bin",
+      "version": "1:2.66-4+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcbor0.8",
+      "version": "0.8.0-2+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcc1-0",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcom-err2",
+      "version": "1.47.0-2+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcrypt-dev",
+      "version": "1:4.4.33-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcrypt1",
+      "version": "1:4.4.33-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcryptsetup12",
+      "version": "2:2.6.1-4~deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libctf-nobfd0",
+      "version": "2.40-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libctf0",
+      "version": "2.40-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcurl3-gnutls",
+      "version": "7.88.1-10+deb12u14",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcurl4",
+      "version": "7.88.1-10+deb12u14",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdaemon0",
+      "version": "0.14-7.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdav1d6",
+      "version": "1.0.0-2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdb5.3",
+      "version": "5.3.28+dfsg2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdbus-1-3",
+      "version": "1.14.10-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdconf1",
+      "version": "0.40.0-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libde265-0",
+      "version": "1.0.11-1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdebconfclient0",
+      "version": "0.270",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdebuginfod-common",
+      "version": "0.188-2.1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdebuginfod1",
+      "version": "0.188-2.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdeflate0",
+      "version": "1.14-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdevmapper1.02.1",
+      "version": "2:1.02.185-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdouble-conversion3",
+      "version": "3.2.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdpkg-perl",
+      "version": "1.22.6~bpo12+rpt3",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdrm-amdgpu1",
+      "version": "2.4.123-1~bpo12+1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdrm-common",
+      "version": "2.4.123-1~bpo12+1+rpt1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdrm-radeon1",
+      "version": "2.4.123-1~bpo12+1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdrm2",
+      "version": "2.4.123-1~bpo12+1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdtovl0",
+      "version": "20251002-1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libduktape207",
+      "version": "2.7.0-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdvdread8",
+      "version": "6.1.3-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdw1",
+      "version": "0.188-2.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libebml5",
+      "version": "1.4.4-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libedit2",
+      "version": "3.1-20221030-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libelf1",
+      "version": "0.188-2.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "liberror-perl",
+      "version": "0.17029-2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libevent-core-2.1-7",
+      "version": "2.1.12-stable-8",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libexif12",
+      "version": "0.6.24-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libexpat1",
+      "version": "2.5.0-1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libexpat1-dev",
+      "version": "2.5.0-1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libext2fs2",
+      "version": "1.47.0-2+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libfakeroot",
+      "version": "1.31-1.2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libfdisk1",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libfdt1",
+      "version": "1.6.1-4+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libffi8",
+      "version": "3.4.4-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libfftw3-single3",
+      "version": "3.3.10-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libfido2-1",
+      "version": "1.12.0-2+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libfile-fcntllock-perl",
+      "version": "0.22-4+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libflac12",
+      "version": "1.4.2+ds-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libfmt9",
+      "version": "9.1.0+ds1-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libfontconfig1",
+      "version": "2.14.1-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libfreetype6",
+      "version": "2.12.1+dfsg-5+deb12u4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libftdi1-2",
+      "version": "1.5-6+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libfuse3-3",
+      "version": "3.14.0-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgav1-1",
+      "version": "0.18.0-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgbm1",
+      "version": "24.2.8-1~bpo12+rpt4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgcc-12-dev",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgcc-s1",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgcrypt20",
+      "version": "1.10.1-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgd3",
+      "version": "2.3.3-9",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgdbm-compat4",
+      "version": "1.23-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgdbm6",
+      "version": "1.23-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgit2-1.5",
+      "version": "1.5.1+ds-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgl1",
+      "version": "1.6.0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgl1-mesa-dri",
+      "version": "24.2.8-1~bpo12+rpt4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgl1-mesa-glx",
+      "version": "22.3.6-1+rpt2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libglapi-mesa",
+      "version": "24.2.8-1~bpo12+rpt4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libglib2.0-0",
+      "version": "2.74.6-2+deb12u7",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libglib2.0-data",
+      "version": "2.74.6-2+deb12u7",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libglvnd0",
+      "version": "1.6.0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libglx-mesa0",
+      "version": "24.2.8-1~bpo12+rpt4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libglx0",
+      "version": "1.6.0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgmp10",
+      "version": "2:6.2.1+dfsg1-1.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgnutls30",
+      "version": "3.7.9-2+deb12u5",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgomp1",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgpg-error0",
+      "version": "1.46-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgpgme11",
+      "version": "1.18.0-3+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgpiod2",
+      "version": "1.6.3-1+b3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgpiolib0",
+      "version": "20251002-1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgpm2",
+      "version": "1.20.7-10+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgprofng0",
+      "version": "2.40-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgssapi-krb5-2",
+      "version": "1.20.1-2+deb12u4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgudev-1.0-0",
+      "version": "237-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libheif1",
+      "version": "1.15.1-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libhogweed6",
+      "version": "3.8.1-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libhttp-parser2.9",
+      "version": "2.9.4-5",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libhwasan0",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libicu72",
+      "version": "72.1-3+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libidn2-0",
+      "version": "2.3.3-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libip4tc2",
+      "version": "1.8.9-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libip6tc2",
+      "version": "1.8.9-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libisl23",
+      "version": "0.25-1.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libitm1",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libiw30",
+      "version": "30~pre9-14",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libjansson4",
+      "version": "2.14-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libjaylink0",
+      "version": "0.3.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libjbig0",
+      "version": "2.1-6.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libjim0.81",
+      "version": "0.81+dfsg0-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libjpeg62-turbo",
+      "version": "1:2.1.5-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libjs-jquery",
+      "version": "3.6.1+dfsg+~3.5.14-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libjs-sphinxdoc",
+      "version": "5.3.0-4",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libjs-underscore",
+      "version": "1.13.4~dfsg+~1.11.4-3",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libjson-c5",
+      "version": "0.16-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libk5crypto3",
+      "version": "1.20.1-2+deb12u4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libkeyutils1",
+      "version": "1.6.3-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libklibc",
+      "version": "2.0.12-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libkmod2",
+      "version": "30+20221128-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libkms++0",
+      "version": "0~git20250807.1813ada-1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libkrb5-3",
+      "version": "1.20.1-2+deb12u4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libkrb5support0",
+      "version": "1.20.1-2+deb12u4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libksba8",
+      "version": "1.6.3-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libldap-2.5-0",
+      "version": "2.5.13+dfsg-5",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libldap-common",
+      "version": "2.5.13+dfsg-5",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "liblerc4",
+      "version": "4.0.0+ds-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "liblgpio1",
+      "version": "0.2.2-1~rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libllvm15",
+      "version": "1:15.0.6-4+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "liblocale-gettext-perl",
+      "version": "1.07-5",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "liblsan0",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "liblttng-ust-common1",
+      "version": "2.13.5-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "liblttng-ust-ctl5",
+      "version": "2.13.5-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "liblttng-ust1",
+      "version": "2.13.5-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libluajit-5.1-2",
+      "version": "2.1.0~beta3+git20220320+dfsg-4.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libluajit-5.1-common",
+      "version": "2.1.0~beta3+git20220320+dfsg-4.1+deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "liblz4-1",
+      "version": "1.9.4-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "liblzma5",
+      "version": "5.4.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmagic-mgc",
+      "version": "1:5.44-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmagic1",
+      "version": "1:5.44-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmatroska7",
+      "version": "1.7.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmbedcrypto7",
+      "version": "2.28.3-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmbedtls14",
+      "version": "2.28.3-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmbedx509-1",
+      "version": "2.28.3-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmbim-glib4",
+      "version": "1.28.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmbim-proxy",
+      "version": "1.28.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmbim-utils",
+      "version": "1.28.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmd0",
+      "version": "1.0.4-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmm-glib0",
+      "version": "1.20.4-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmnl0",
+      "version": "1.0.4-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmount1",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmpc3",
+      "version": "1.3.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmpfr6",
+      "version": "4.2.0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmtp-common",
+      "version": "1.1.20-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmtp-runtime",
+      "version": "1.1.20-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libmtp9",
+      "version": "1.1.20-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libncursesw6",
+      "version": "6.4-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libndp0",
+      "version": "1.8-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnetfilter-conntrack3",
+      "version": "1.0.9-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnettle8",
+      "version": "3.8.1-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnewt0.52",
+      "version": "0.52.23-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnfnetlink0",
+      "version": "1.0.2-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnfsidmap1",
+      "version": "1:2.6.2-4+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnftables1",
+      "version": "1.0.6-2+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnftnl11",
+      "version": "1.2.4-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnghttp2-14",
+      "version": "1.52.0-1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnl-3-200",
+      "version": "3.7.0-0.2+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnl-genl-3-200",
+      "version": "3.7.0-0.2+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnl-route-3-200",
+      "version": "3.7.0-0.2+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnm0",
+      "version": "1.42.4-1+rpt1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnpth0",
+      "version": "1.6-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnsl-dev",
+      "version": "1.3.0-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnsl2",
+      "version": "1.3.0-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnspr4",
+      "version": "2:4.35-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnss-mdns",
+      "version": "0.15.1-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnss3",
+      "version": "2:3.87.1-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libntfs-3g89",
+      "version": "1:2022.10.3-1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnuma1",
+      "version": "2.0.18-1~rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libogg0",
+      "version": "1.3.5-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libossp-uuid16",
+      "version": "1.6.2-1.5+b11",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libp11-kit0",
+      "version": "0.24.1-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpam-chksshpwd",
+      "version": "1.5.2-6+rpt2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpam-modules",
+      "version": "1.5.2-6+rpt2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpam-modules-bin",
+      "version": "1.5.2-6+rpt2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpam-runtime",
+      "version": "1.5.2-6+rpt2+deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpam-systemd",
+      "version": "252.39-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpam0g",
+      "version": "1.5.2-6+rpt2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libparted-fs-resize0",
+      "version": "3.5-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libparted2",
+      "version": "3.5-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpcap0.8",
+      "version": "1.10.3-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpci3",
+      "version": "1:3.9.0-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpcre2-16-0",
+      "version": "10.42-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpcre2-8-0",
+      "version": "10.42-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpcsclite1",
+      "version": "1.9.9-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libperl5.36",
+      "version": "5.36.0-7+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpigpio-dev",
+      "version": "1.79-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpigpio1",
+      "version": "1.79-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpigpiod-if-dev",
+      "version": "1.79-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpigpiod-if1",
+      "version": "1.79-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpigpiod-if2-1",
+      "version": "1.79-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpipeline1",
+      "version": "1.5.7-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpisp-common",
+      "version": "1.2.1-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpisp1",
+      "version": "1.2.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpkgconf3",
+      "version": "1.8.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpng16-16",
+      "version": "1.6.39-2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpolkit-agent-1-0",
+      "version": "122-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpolkit-gobject-1-0",
+      "version": "122-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpopt0",
+      "version": "1.19+dfsg-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libproc2-0",
+      "version": "2:4.0.2-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpsl5",
+      "version": "0.21.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpugixml1v5",
+      "version": "1.13-0.2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpython3-dev",
+      "version": "3.11.2-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpython3-stdlib",
+      "version": "3.11.2-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpython3.11",
+      "version": "3.11.2-6+deb12u6",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpython3.11-dev",
+      "version": "3.11.2-6+deb12u6",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpython3.11-minimal",
+      "version": "3.11.2-6+deb12u6",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libpython3.11-stdlib",
+      "version": "3.11.2-6+deb12u6",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libqmi-glib5",
+      "version": "1.32.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libqmi-proxy",
+      "version": "1.32.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libqmi-utils",
+      "version": "1.32.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libqrtr-glib0",
+      "version": "1.2.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libqt5core5a",
+      "version": "5.15.8+dfsg-11+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "librav1e0",
+      "version": "0.5.1-6",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libreadline8",
+      "version": "8.2-1.3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "librpicam-app1",
+      "version": "1.9.0-1~bpo12+1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "librtmp1",
+      "version": "2.4+20151223.gitfa8646d.1-2+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsamplerate0",
+      "version": "0.2.2-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsasl2-2",
+      "version": "2.1.28+dfsg-10",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsasl2-modules",
+      "version": "2.1.28+dfsg-10",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsasl2-modules-db",
+      "version": "2.1.28+dfsg-10",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libseccomp2",
+      "version": "2.5.4-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libselinux1",
+      "version": "3.4-1+b6",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsemanage-common",
+      "version": "3.4-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsemanage2",
+      "version": "3.4-1+b5",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsensors-config",
+      "version": "1:3.6.0-7.1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsensors5",
+      "version": "1:3.6.0-7.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsepol2",
+      "version": "3.4-2.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libslang2",
+      "version": "2.3.3-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libslirp0",
+      "version": "4.7.0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsmartcols1",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsodium23",
+      "version": "1.0.18-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsource-highlight-common",
+      "version": "3.1.9-4.2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsource-highlight4v5",
+      "version": "3.1.9-4.2+b3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsqlite3-0",
+      "version": "3.40.1-2+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libss2",
+      "version": "1.47.0-2+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libssh2-1",
+      "version": "1.10.0-3+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libssl3",
+      "version": "3.0.17-1~deb12u3+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libstdc++-12-dev",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libstdc++6",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsvtav1enc1",
+      "version": "1.4.1+dfsg-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsystemd-shared",
+      "version": "252.39-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsystemd0",
+      "version": "252.39-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libtalloc2",
+      "version": "2.4.0-f2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libtasn1-6",
+      "version": "4.19.0-2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libteamdctl0",
+      "version": "1.31-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libtext-charwidth-perl",
+      "version": "0.04-11",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libtext-iconv-perl",
+      "version": "1.7-8",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libtext-wrapi18n-perl",
+      "version": "0.06-10",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libtiff6",
+      "version": "4.5.0-6+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libtinfo6",
+      "version": "6.4-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libtirpc-common",
+      "version": "1.3.3+ds-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libtirpc-dev",
+      "version": "1.3.3+ds-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libtirpc3",
+      "version": "1.3.3+ds-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libtsan2",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libubsan1",
+      "version": "12.2.0-14+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libuchardet0",
+      "version": "0.0.7-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libudev1",
+      "version": "252.39-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libudisks2-0",
+      "version": "2.9.4-4+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libunistring2",
+      "version": "1.0-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libusb-1.0-0",
+      "version": "2:1.0.26-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libutempter0",
+      "version": "1.2.1-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libuuid1",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libv4l-0",
+      "version": "1.22.1-5+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libv4l2rds0",
+      "version": "1.22.1-5+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libv4lconvert0",
+      "version": "1.22.1-5+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libvolume-key1",
+      "version": "0.3.12-5+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libvorbis0a",
+      "version": "1.3.7-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libvulkan1",
+      "version": "1.3.239.0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libwayland-client0",
+      "version": "1.23.1-3+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libwayland-server0",
+      "version": "1.23.1-3+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libwbclient0",
+      "version": "2:4.17.12+dfsg-0+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libwebp7",
+      "version": "1.2.4-0.2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libwrap0",
+      "version": "7.6.q-32",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libx11-6",
+      "version": "2:1.8.4-2+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libx11-data",
+      "version": "2:1.8.4-2+deb12u2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libx11-xcb1",
+      "version": "2:1.8.4-2+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libx265-199",
+      "version": "3.5-2+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxau6",
+      "version": "1:1.0.9-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxcb-dri2-0",
+      "version": "1.15-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxcb-dri3-0",
+      "version": "1.15-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxcb-glx0",
+      "version": "1.15-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxcb-present0",
+      "version": "1.15-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxcb-randr0",
+      "version": "1.15-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxcb-shm0",
+      "version": "1.15-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxcb-sync1",
+      "version": "1.15-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxcb-xfixes0",
+      "version": "1.15-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxcb1",
+      "version": "1.15-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxdmcp6",
+      "version": "1:1.1.2-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxext6",
+      "version": "2:1.3.4-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxfixes3",
+      "version": "1:6.0.0-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxml2",
+      "version": "2.9.14+dfsg-1.3~deb12u4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxmuu1",
+      "version": "2:1.1.3-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxpm4",
+      "version": "1:3.5.12-1.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxshmfence1",
+      "version": "1.3-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxtables12",
+      "version": "1.8.9-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxxf86vm1",
+      "version": "1:1.1.4-1+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxxhash0",
+      "version": "0.8.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libyaml-0-2",
+      "version": "0.2.5-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libyuv0",
+      "version": "0.0~git20230123.b2528b0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libz3-4",
+      "version": "4.8.12-3.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libzstd1",
+      "version": "1.5.4+dfsg2-5",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-base",
+      "version": "4.9",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-headers-6.12.34+rpt-common-rpi",
+      "version": "1:6.12.34-1+rpt1~bookworm",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-headers-6.12.34+rpt-rpi-2712",
+      "version": "1:6.12.34-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-headers-6.12.34+rpt-rpi-v8",
+      "version": "1:6.12.34-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-headers-6.12.47+rpt-common-rpi",
+      "version": "1:6.12.47-1+rpt1~bookworm",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-headers-6.12.47+rpt-rpi-2712",
+      "version": "1:6.12.47-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-headers-6.12.47+rpt-rpi-v8",
+      "version": "1:6.12.47-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-headers-rpi-2712",
+      "version": "1:6.12.47-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-headers-rpi-v8",
+      "version": "1:6.12.47-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-image-6.12.25+rpt-rpi-2712",
+      "version": "1:6.12.25-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-image-6.12.25+rpt-rpi-v8",
+      "version": "1:6.12.25-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-image-6.12.34+rpt-rpi-2712",
+      "version": "1:6.12.34-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-image-6.12.34+rpt-rpi-v8",
+      "version": "1:6.12.34-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-image-6.12.47+rpt-rpi-2712",
+      "version": "1:6.12.47-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-image-6.12.47+rpt-rpi-v8",
+      "version": "1:6.12.47-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-image-rpi-2712",
+      "version": "1:6.12.47-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-image-rpi-v8",
+      "version": "1:6.12.47-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-kbuild-6.12.34+rpt",
+      "version": "1:6.12.34-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-kbuild-6.12.47+rpt",
+      "version": "1:6.12.47-1+rpt1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "linux-libc-dev",
+      "version": "1:6.12.47-1+rpt1~bookworm",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "locales",
+      "version": "2.36-9+rpt2+deb12u13",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "login",
+      "version": "1:4.13+dfsg1-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "logrotate",
+      "version": "3.21.0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "logsave",
+      "version": "1.47.0-2+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "lsb-release",
+      "version": "12.0-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "lsof",
+      "version": "4.95.0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "lua5.1",
+      "version": "5.1.5-9",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "luajit",
+      "version": "2.1.0~beta3+git20220320+dfsg-4.1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "make",
+      "version": "4.3-4.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "man-db",
+      "version": "2.11.2-2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "manpages",
+      "version": "6.03-2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "manpages-dev",
+      "version": "6.03-2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "mawk",
+      "version": "1.3.4.20200120-3.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "media-types",
+      "version": "10.0.0",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "mesa-libgallium",
+      "version": "24.2.8-1~bpo12+rpt4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "mesa-vulkan-drivers",
+      "version": "24.2.8-1~bpo12+rpt4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "mkvtoolnix",
+      "version": "74.0.0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "modemmanager",
+      "version": "1.20.4-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "mount",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "nano",
+      "version": "7.2-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ncdu",
+      "version": "1.18-0.2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ncurses-base",
+      "version": "6.4-4",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ncurses-bin",
+      "version": "6.4-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ncurses-term",
+      "version": "6.4-4",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "net-tools",
+      "version": "2.10-0.1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "netbase",
+      "version": "6.4",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "network-manager",
+      "version": "1.42.4-1+rpt1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "nfs-common",
+      "version": "1:2.6.2-4+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "nftables",
+      "version": "1.0.6-2+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ntfs-3g",
+      "version": "1:2022.10.3-1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "openssh-client",
+      "version": "1:9.2p1-2+deb12u7",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "openssh-server",
+      "version": "1:9.2p1-2+deb12u7",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "openssh-sftp-server",
+      "version": "1:9.2p1-2+deb12u7",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "openssl",
+      "version": "3.0.17-1~deb12u3+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "p7zip",
+      "version": "16.02+dfsg-8",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "p7zip-full",
+      "version": "16.02+dfsg-8",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "parted",
+      "version": "3.5-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "passwd",
+      "version": "1:4.13+dfsg1-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pastebinit",
+      "version": "1.6.2-1+rpt2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "patch",
+      "version": "2.7.6-7",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pci.ids",
+      "version": "0.0~2023.04.11-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pciutils",
+      "version": "1:3.9.0-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "perl",
+      "version": "5.36.0-7+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "perl-base",
+      "version": "5.36.0-7+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "perl-modules-5.36",
+      "version": "5.36.0-7+deb12u3",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pi-bluetooth",
+      "version": "0.1.20",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pigpio",
+      "version": "1.79-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pigpio-tools",
+      "version": "1.79-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pigpiod",
+      "version": "1.79-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pigz",
+      "version": "2.6-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pinentry-curses",
+      "version": "1.2.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pkexec",
+      "version": "122-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pkg-config",
+      "version": "1.8.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pkgconf",
+      "version": "1.8.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "pkgconf-bin",
+      "version": "1.8.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "policykit-1",
+      "version": "122-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "polkitd",
+      "version": "122-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "polkitd-pkla",
+      "version": "122-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ppp",
+      "version": "2.4.9-1+1.1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "procps",
+      "version": "2:4.0.2-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "psmisc",
+      "version": "23.6-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "publicsuffix",
+      "version": "20230209.2326-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python-apt-common",
+      "version": "2.6.0",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python-is-python3",
+      "version": "3.11.2-1+deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3",
+      "version": "3.11.2-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-apt",
+      "version": "2.6.0",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-certifi",
+      "version": "2022.9.24-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-chardet",
+      "version": "5.1.0+dfsg-2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-charset-normalizer",
+      "version": "3.0.1-2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-colorzero",
+      "version": "2.0-2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-debconf",
+      "version": "1.5.82",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-dev",
+      "version": "3.11.2-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-distro",
+      "version": "1.8.0-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-distutils",
+      "version": "3.11.2-3",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-gpiozero",
+      "version": "2.0.1-0+rpt1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-idna",
+      "version": "3.3-1+deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-lgpio",
+      "version": "0.2.2-1~rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-lib2to3",
+      "version": "3.11.2-3",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-libgpiod",
+      "version": "1.6.3-1+b3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-minimal",
+      "version": "3.11.2-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-pigpio",
+      "version": "1.79-1+rpt1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-pip",
+      "version": "23.0.1+dfsg-1+rpt1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-pip-whl",
+      "version": "23.0.1+dfsg-1+rpt1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-pkg-resources",
+      "version": "66.1.1-1+deb12u2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-pycryptodome",
+      "version": "3.11.0+dfsg1-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-requests",
+      "version": "2.28.1+dfsg-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-rpi-lgpio",
+      "version": "0.6-0~rpt1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-setuptools",
+      "version": "66.1.1-1+deb12u2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-setuptools-whl",
+      "version": "66.1.1-1+deb12u2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-six",
+      "version": "1.16.0-4",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-smbus2",
+      "version": "0.4.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-spidev",
+      "version": "20200602~200721-1+bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-toml",
+      "version": "0.10.2-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-urllib3",
+      "version": "1.26.12-1+deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-venv",
+      "version": "3.11.2-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3-wheel",
+      "version": "0.38.4-2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3.11",
+      "version": "3.11.2-6+deb12u6",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3.11-dev",
+      "version": "3.11.2-6+deb12u6",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3.11-minimal",
+      "version": "3.11.2-6+deb12u6",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "python3.11-venv",
+      "version": "3.11.2-6+deb12u6",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspberrypi-archive-keyring",
+      "version": "2021.1.1+rpt1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspberrypi-net-mods",
+      "version": "1.4.3",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspberrypi-sys-mods",
+      "version": "20250930~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspi-config",
+      "version": "20250813",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspi-firmware",
+      "version": "1:1.20250915-1~bookworm",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspi-gpio",
+      "version": "0.20231127",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspi-utils",
+      "version": "20251002-1~bookworm",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspi-utils-core",
+      "version": "20251002-1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspi-utils-dt",
+      "version": "20251002-1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspi-utils-eeprom",
+      "version": "20251002-1~bookworm",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspi-utils-otp",
+      "version": "20251002-1~bookworm",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "raspinfo",
+      "version": "20251002-1~bookworm",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "readline-common",
+      "version": "8.2-1.3",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "rfkill",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "rpcbind",
+      "version": "1.2.6-6+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "rpcsvc-proto",
+      "version": "1.4.3-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "rpi-eeprom",
+      "version": "28.10-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "rpi-update",
+      "version": "20230904",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "rpicam-apps-core",
+      "version": "1.9.0-1~bpo12+1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "rsync",
+      "version": "3.2.7-1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "runit-helper",
+      "version": "2.15.2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "sed",
+      "version": "4.9-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "sensible-utils",
+      "version": "0.0.17+nmu1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "sgml-base",
+      "version": "1.31",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "shared-mime-info",
+      "version": "2.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "slirp4netns",
+      "version": "1.2.0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "sqlite3",
+      "version": "3.40.1-2+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ssh",
+      "version": "1:9.2p1-2+deb12u7",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ssh-import-id",
+      "version": "5.10-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "strace",
+      "version": "6.1-0.1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "sudo",
+      "version": "1.9.13p3-1+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "systemd",
+      "version": "252.39-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "systemd-sysv",
+      "version": "252.39-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "systemd-timesyncd",
+      "version": "252.39-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "sysvinit-utils",
+      "version": "3.06-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "tar",
+      "version": "1.34+dfsg-1.2+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "tasksel",
+      "version": "3.73",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "tasksel-data",
+      "version": "3.73",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "tmux",
+      "version": "3.3a-3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "tree",
+      "version": "2.1.0-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "triggerhappy",
+      "version": "0.5.0-1.1+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "tzdata",
+      "version": "2025b-0+deb12u2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ucf",
+      "version": "3.0043+nmu1+deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "udev",
+      "version": "252.39-1~deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "udisks2",
+      "version": "2.9.4-4+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "unzip",
+      "version": "6.0-28",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "usb-modeswitch",
+      "version": "2.6.1-3+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "usb-modeswitch-data",
+      "version": "20191128-5",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "usbutils",
+      "version": "1:014-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "userconf-pi",
+      "version": "0.11",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "usr-is-merged",
+      "version": "37~deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "util-linux",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "util-linux-extra",
+      "version": "2.38.1-5+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "uuid",
+      "version": "1.6.2-1.5+b11",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "v4l-utils",
+      "version": "1.22.1-5+b2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "vim",
+      "version": "2:9.0.1378-2+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "vim-common",
+      "version": "2:9.0.1378-2+deb12u2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "vim-runtime",
+      "version": "2:9.0.1378-2+deb12u2",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "vim-tiny",
+      "version": "2:9.0.1378-2+deb12u2",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "wget",
+      "version": "1.21.3-1+deb12u1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "whiptail",
+      "version": "0.52.23-1+b1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "wireless-regdb",
+      "version": "2025.07.10-1~deb12u1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "wireless-tools",
+      "version": "30~pre9-14",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "wpasupplicant",
+      "version": "2:2.10-12+deb12u3",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "xauth",
+      "version": "1:1.1.2-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "xdg-user-dirs",
+      "version": "0.18-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "xkb-data",
+      "version": "2.35.1-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "xml-core",
+      "version": "0.18+nmu1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "xsel",
+      "version": "1.2.0+git9bfc13d.20180109-4",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "xz-utils",
+      "version": "5.4.1-1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "zip",
+      "version": "3.0-13",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "zlib1g",
+      "version": "1:1.2.13.dfsg-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "zlib1g-dev",
+      "version": "1:1.2.13.dfsg-1+rpt1",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "zstd",
+      "version": "1.5.4+dfsg2-5",
+      "arch": "arm64",
+      "summary": "",
+      "manager": "dpkg"
+    }
+  ],
+  "system_services": [
+    {
+      "name": "avahi-daemon.service",
+      "status": "active",
+      "state": "running",
+      "description": "Avahi mDNS/DNS-SD Stack"
+    },
+    {
+      "name": "bluetooth.service",
+      "status": "active",
+      "state": "running",
+      "description": "Bluetooth service"
+    },
+    {
+      "name": "containerd.service",
+      "status": "active",
+      "state": "running",
+      "description": "containerd container runtime"
+    },
+    {
+      "name": "cron.service",
+      "status": "active",
+      "state": "running",
+      "description": "Regular background program processing daemon"
+    },
+    {
+      "name": "dbus.service",
+      "status": "active",
+      "state": "running",
+      "description": "D-Bus System Message Bus"
+    },
+    {
+      "name": "docker.service",
+      "status": "active",
+      "state": "running",
+      "description": "Docker Application Container Engine"
+    },
+    {
+      "name": "getty@tty1.service",
+      "status": "active",
+      "state": "running",
+      "description": "Getty on tty1"
+    },
+    {
+      "name": "ModemManager.service",
+      "status": "active",
+      "state": "running",
+      "description": "Modem Manager"
+    },
+    {
+      "name": "NetworkManager.service",
+      "status": "active",
+      "state": "running",
+      "description": "Network Manager"
+    },
+    {
+      "name": "polkit.service",
+      "status": "active",
+      "state": "running",
+      "description": "Authorization Manager"
+    },
+    {
+      "name": "ssh.service",
+      "status": "active",
+      "state": "running",
+      "description": "OpenBSD Secure Shell server"
+    },
+    {
+      "name": "systemd-journald.service",
+      "status": "active",
+      "state": "running",
+      "description": "Journal Service"
+    },
+    {
+      "name": "systemd-logind.service",
+      "status": "active",
+      "state": "running",
+      "description": "User Login Management"
+    },
+    {
+      "name": "systemd-timesyncd.service",
+      "status": "active",
+      "state": "running",
+      "description": "Network Time Synchronization"
+    },
+    {
+      "name": "systemd-udevd.service",
+      "status": "active",
+      "state": "running",
+      "description": "Rule-based Manager for Device Events and Files"
+    },
+    {
+      "name": "triggerhappy.service",
+      "status": "active",
+      "state": "running",
+      "description": "triggerhappy global hotkey daemon"
+    },
+    {
+      "name": "user@1000.service",
+      "status": "active",
+      "state": "running",
+      "description": "User Manager for UID 1000"
+    },
+    {
+      "name": "wpa_supplicant.service",
+      "status": "active",
+      "state": "running",
+      "description": "WPA supplicant"
+    }
+  ],
+  "capabilities": [
+    "docker"
+  ],
+  "listening_ports_sample": null,
+  "docker": {
+    "compose_projects": [
+      {
+        "project": "labrador",
+        "ls_record": {
+          "Name": "labrador",
+          "Status": "running(2)",
+          "ConfigFiles": "/home/cbn/labrador/docker-compose.yml"
+        },
+        "ps": [
+          {
+            "Command": "\"/entrypoint.sh pyth\u2026\"",
+            "CreatedAt": "2025-12-14 10:07:01 +0800 HKT",
+            "ExitCode": 0,
+            "Health": "",
+            "ID": "510df2d39007",
+            "Image": "labrador-backend-full",
+            "Labels": "com.docker.compose.oneoff=False,com.docker.compose.project=labrador,com.docker.compose.project.config_files=/home/cbn/labrador/docker-compose.yml,com.docker.compose.version=5.0.0,com.docker.compose.config-hash=79c697204ee98cba76d1b1e16c1eeab2df90873c4afe04ccadfc8eef9466d382,com.docker.compose.container-number=1,com.docker.compose.image=sha256:584db3f331d25838ca9d5e1d2885c5130e482a792d7b6bf4cf10c82ee0e500f1,com.docker.compose.project.working_dir=/home/cbn/labrador,com.docker.compose.replace=labrador_backend,com.docker.compose.service=backend-full,com.docker.compose.depends_on=",
+            "LocalVolumes": "0",
+            "Mounts": "/home/cbn/labr\u2026,/home/cbn/labr\u2026,/dev",
+            "Name": "labrador_backend",
+            "Names": "labrador_backend",
+            "Networks": "labrador_network",
+            "Ports": "0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp",
+            "Project": "labrador",
+            "Publishers": [
+              {
+                "URL": "0.0.0.0",
+                "TargetPort": 8000,
+                "PublishedPort": 8000,
+                "Protocol": "tcp"
+              },
+              {
+                "URL": "::",
+                "TargetPort": 8000,
+                "PublishedPort": 8000,
+                "Protocol": "tcp"
+              }
+            ],
+            "RunningFor": "2 weeks ago",
+            "Service": "backend-full",
+            "Size": "0B",
+            "State": "running",
+            "Status": "Up 2 weeks"
+          },
+          {
+            "Command": "\"/docker-entrypoint.\u2026\"",
+            "CreatedAt": "2025-12-14 10:07:01 +0800 HKT",
+            "ExitCode": 0,
+            "Health": "",
+            "ID": "98664b10456c",
+            "Image": "labrador-frontend",
+            "Labels": "com.docker.compose.replace=labrador_frontend,maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:754daa020d893846b4fa491de0f3a93c5946c5429325fd781300a78aa6051650,com.docker.compose.oneoff=False,com.docker.compose.project.working_dir=/home/cbn/labrador,com.docker.compose.service=frontend,com.docker.compose.version=5.0.0,com.docker.compose.config-hash=dc8064ba92eea785e0b8942353bcb2d2c5b1304c0ee473cf52dc9295a067812f,com.docker.compose.project=labrador,com.docker.compose.project.config_files=/home/cbn/labrador/docker-compose.yml",
+            "LocalVolumes": "0",
+            "Mounts": "/home/cbn/labr\u2026",
+            "Name": "labrador_frontend",
+            "Names": "labrador_frontend",
+            "Networks": "labrador_network",
+            "Ports": "0.0.0.0:80->80/tcp, [::]:80->80/tcp",
+            "Project": "labrador",
+            "Publishers": [
+              {
+                "URL": "0.0.0.0",
+                "TargetPort": 80,
+                "PublishedPort": 80,
+                "Protocol": "tcp"
+              },
+              {
+                "URL": "::",
+                "TargetPort": 80,
+                "PublishedPort": 80,
+                "Protocol": "tcp"
+              }
+            ],
+            "RunningFor": "2 weeks ago",
+            "Service": "frontend",
+            "Size": "0B",
+            "State": "running",
+            "Status": "Up 2 weeks"
+          }
+        ],
+        "rendered_config": null,
+        "containers_inspect": [
+          {
+            "Id": "510df2d39007b88650b6c3525a3b527fedbc925b801c863aa05e1efff5548512",
+            "Created": "2025-12-14T02:07:01.610442727Z",
+            "Path": "/entrypoint.sh",
+            "Args": [
+              "python",
+              "-m",
+              "api.main"
+            ],
+            "State": {
+              "Status": "running",
+              "Running": true,
+              "Paused": false,
+              "Restarting": false,
+              "OOMKilled": false,
+              "Dead": false,
+              "Pid": 1686747,
+              "ExitCode": 0,
+              "Error": "",
+              "StartedAt": "2025-12-14T02:07:04.639073027Z",
+              "FinishedAt": "0001-01-01T00:00:00Z"
+            },
+            "Image": "sha256:584db3f331d25838ca9d5e1d2885c5130e482a792d7b6bf4cf10c82ee0e500f1",
+            "ResolvConfPath": "/var/lib/docker/containers/510df2d39007b88650b6c3525a3b527fedbc925b801c863aa05e1efff5548512/resolv.conf",
+            "HostnamePath": "/var/lib/docker/containers/510df2d39007b88650b6c3525a3b527fedbc925b801c863aa05e1efff5548512/hostname",
+            "HostsPath": "/var/lib/docker/containers/510df2d39007b88650b6c3525a3b527fedbc925b801c863aa05e1efff5548512/hosts",
+            "LogPath": "/var/lib/docker/containers/510df2d39007b88650b6c3525a3b527fedbc925b801c863aa05e1efff5548512/510df2d39007b88650b6c3525a3b527fedbc925b801c863aa05e1efff5548512-json.log",
+            "Name": "/labrador_backend",
+            "RestartCount": 0,
+            "Driver": "overlayfs",
+            "Platform": "linux",
+            "MountLabel": "",
+            "ProcessLabel": "",
+            "AppArmorProfile": "",
+            "ExecIDs": null,
+            "HostConfig": {
+              "Binds": [
+                "/dev:/dev:rw",
+                "/home/cbn/labrador/logs:/app/logs:rw",
+                "/home/cbn/labrador/labrador.db:/app/labrador.db:rw"
+              ],
+              "ContainerIDFile": "",
+              "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+              },
+              "NetworkMode": "labrador_network",
+              "PortBindings": {
+                "8000/tcp": [
+                  {
+                    "HostIp": "",
+                    "HostPort": "8000"
+                  }
+                ]
+              },
+              "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+              },
+              "AutoRemove": false,
+              "VolumeDriver": "",
+              "VolumesFrom": null,
+              "ConsoleSize": [
+                0,
+                0
+              ],
+              "CapAdd": null,
+              "CapDrop": null,
+              "CgroupnsMode": "private",
+              "Dns": null,
+              "DnsOptions": null,
+              "DnsSearch": null,
+              "ExtraHosts": [],
+              "GroupAdd": null,
+              "IpcMode": "private",
+              "Cgroup": "",
+              "Links": null,
+              "OomScoreAdj": 0,
+              "PidMode": "",
+              "Privileged": true,
+              "PublishAllPorts": false,
+              "ReadonlyRootfs": false,
+              "SecurityOpt": [
+                "label=disable"
+              ],
+              "UTSMode": "",
+              "UsernsMode": "",
+              "ShmSize": 67108864,
+              "Runtime": "runc",
+              "Isolation": "",
+              "CpuShares": 0,
+              "Memory": 0,
+              "NanoCpus": 0,
+              "CgroupParent": "",
+              "BlkioWeight": 0,
+              "BlkioWeightDevice": null,
+              "BlkioDeviceReadBps": null,
+              "BlkioDeviceWriteBps": null,
+              "BlkioDeviceReadIOps": null,
+              "BlkioDeviceWriteIOps": null,
+              "CpuPeriod": 0,
+              "CpuQuota": 0,
+              "CpuRealtimePeriod": 0,
+              "CpuRealtimeRuntime": 0,
+              "CpusetCpus": "",
+              "CpusetMems": "",
+              "Devices": null,
+              "DeviceCgroupRules": null,
+              "DeviceRequests": null,
+              "MemoryReservation": 0,
+              "MemorySwap": 0,
+              "MemorySwappiness": null,
+              "OomKillDisable": null,
+              "PidsLimit": null,
+              "Ulimits": null,
+              "CpuCount": 0,
+              "CpuPercent": 0,
+              "IOMaximumIOps": 0,
+              "IOMaximumBandwidth": 0,
+              "MaskedPaths": null,
+              "ReadonlyPaths": null
+            },
+            "Storage": {
+              "RootFS": {
+                "Snapshot": {
+                  "Name": "overlayfs"
+                }
+              }
+            },
+            "Mounts": [
+              {
+                "Type": "bind",
+                "Source": "/dev",
+                "Destination": "/dev",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+              },
+              {
+                "Type": "bind",
+                "Source": "/home/cbn/labrador/logs",
+                "Destination": "/app/logs",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+              },
+              {
+                "Type": "bind",
+                "Source": "/home/cbn/labrador/labrador.db",
+                "Destination": "/app/labrador.db",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+              }
+            ],
+            "Config": {
+              "Hostname": "510df2d39007",
+              "Domainname": "",
+              "User": "",
+              "AttachStdin": false,
+              "AttachStdout": true,
+              "AttachStderr": true,
+              "ExposedPorts": {
+                "8000/tcp": {}
+              },
+              "Tty": false,
+              "OpenStdin": false,
+              "StdinOnce": false,
+              "Env": [
+                "CORS_ORIGINS=http://ae86.marina,http://ae86.marina:3000",
+                "LABRADOR_MODE=FULL",
+                "PORT=8000",
+                "DB_NAME=labrador.db",
+                "LOG_DIR=logs",
+                "TZ=Asia/Hong_Kong",
+                "USE_MOCK_DEVICES=false",
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+                "PYTHON_VERSION=3.11.14",
+                "PYTHON_SHA256=8d3ed8ec5c88c1c95f5e558612a725450d2452813ddad5e58fdb1a53b1209b78",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PYTHONUNBUFFERED=1"
+              ],
+              "Cmd": [
+                "python",
+                "-m",
+                "api.main"
+              ],
+              "Image": "labrador-backend-full",
+              "Volumes": null,
+              "WorkingDir": "/app",
+              "Entrypoint": [
+                "/entrypoint.sh"
+              ],
+              "Labels": {
+                "com.docker.compose.config-hash": "79c697204ee98cba76d1b1e16c1eeab2df90873c4afe04ccadfc8eef9466d382",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:584db3f331d25838ca9d5e1d2885c5130e482a792d7b6bf4cf10c82ee0e500f1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labrador",
+                "com.docker.compose.project.config_files": "/home/cbn/labrador/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/cbn/labrador",
+                "com.docker.compose.replace": "labrador_backend",
+                "com.docker.compose.service": "backend-full",
+                "com.docker.compose.version": "5.0.0"
+              }
+            },
+            "NetworkSettings": {
+              "SandboxID": "09788970e8aa9b350ef5d7e0a284c81e01f46d92a7526970e2759e82b746e9ec",
+              "SandboxKey": "/var/run/docker/netns/09788970e8aa",
+              "Ports": {
+                "8000/tcp": [
+                  {
+                    "HostIp": "0.0.0.0",
+                    "HostPort": "8000"
+                  },
+                  {
+                    "HostIp": "::",
+                    "HostPort": "8000"
+                  }
+                ]
+              },
+              "Networks": {
+                "labrador_network": {
+                  "IPAMConfig": {
+                    "IPv4Address": "",
+                    "IPv6Address": ""
+                  },
+                  "Links": null,
+                  "Aliases": [
+                    "labrador_backend",
+                    "backend-full",
+                    "backend"
+                  ],
+                  "DriverOpts": null,
+                  "GwPriority": 0,
+                  "NetworkID": "84f48d9c8962e1709c7376b75992bfc8d0fe8a1a818cb28d431757287ecaf671",
+                  "EndpointID": "3d0c0f42db7c8a394e07ce9c31fae28dd6f5db6c3fa15d2a77c11bf64f18e708",
+                  "Gateway": "172.18.0.1",
+                  "IPAddress": "172.18.0.2",
+                  "MacAddress": "7e:fc:68:e0:24:87",
+                  "IPPrefixLen": 16,
+                  "IPv6Gateway": "",
+                  "GlobalIPv6Address": "",
+                  "GlobalIPv6PrefixLen": 0,
+                  "DNSNames": [
+                    "labrador_backend",
+                    "backend-full",
+                    "backend",
+                    "510df2d39007"
+                  ]
+                }
+              }
+            },
+            "ImageManifestDescriptor": {
+              "mediaType": "application/vnd.oci.image.manifest.v1+json",
+              "digest": "sha256:38dc4dafa17ed6f88c50104f3e95c83e5c76a9d182664eaa318effdd0d2ce87a",
+              "size": 2384,
+              "platform": {
+                "architecture": "arm64",
+                "os": "linux"
+              }
+            }
+          },
+          {
+            "Id": "98664b10456c05fa518bb1a60f8d694c1687b94c02a18170e5027589b5fdaf32",
+            "Created": "2025-12-14T02:07:01.247773964Z",
+            "Path": "/docker-entrypoint.sh",
+            "Args": [
+              "nginx",
+              "-g",
+              "daemon off;"
+            ],
+            "State": {
+              "Status": "running",
+              "Running": true,
+              "Paused": false,
+              "Restarting": false,
+              "OOMKilled": false,
+              "Dead": false,
+              "Pid": 1686738,
+              "ExitCode": 0,
+              "Error": "",
+              "StartedAt": "2025-12-14T02:07:04.623996421Z",
+              "FinishedAt": "0001-01-01T00:00:00Z"
+            },
+            "Image": "sha256:754daa020d893846b4fa491de0f3a93c5946c5429325fd781300a78aa6051650",
+            "ResolvConfPath": "/var/lib/docker/containers/98664b10456c05fa518bb1a60f8d694c1687b94c02a18170e5027589b5fdaf32/resolv.conf",
+            "HostnamePath": "/var/lib/docker/containers/98664b10456c05fa518bb1a60f8d694c1687b94c02a18170e5027589b5fdaf32/hostname",
+            "HostsPath": "/var/lib/docker/containers/98664b10456c05fa518bb1a60f8d694c1687b94c02a18170e5027589b5fdaf32/hosts",
+            "LogPath": "/var/lib/docker/containers/98664b10456c05fa518bb1a60f8d694c1687b94c02a18170e5027589b5fdaf32/98664b10456c05fa518bb1a60f8d694c1687b94c02a18170e5027589b5fdaf32-json.log",
+            "Name": "/labrador_frontend",
+            "RestartCount": 0,
+            "Driver": "overlayfs",
+            "Platform": "linux",
+            "MountLabel": "",
+            "ProcessLabel": "",
+            "AppArmorProfile": "",
+            "ExecIDs": null,
+            "HostConfig": {
+              "Binds": [
+                "/home/cbn/labrador/logs/nginx:/var/log/nginx:rw"
+              ],
+              "ContainerIDFile": "",
+              "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+              },
+              "NetworkMode": "labrador_network",
+              "PortBindings": {
+                "80/tcp": [
+                  {
+                    "HostIp": "",
+                    "HostPort": "80"
+                  }
+                ]
+              },
+              "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+              },
+              "AutoRemove": false,
+              "VolumeDriver": "",
+              "VolumesFrom": null,
+              "ConsoleSize": [
+                0,
+                0
+              ],
+              "CapAdd": null,
+              "CapDrop": null,
+              "CgroupnsMode": "private",
+              "Dns": null,
+              "DnsOptions": null,
+              "DnsSearch": null,
+              "ExtraHosts": [],
+              "GroupAdd": null,
+              "IpcMode": "private",
+              "Cgroup": "",
+              "Links": null,
+              "OomScoreAdj": 0,
+              "PidMode": "",
+              "Privileged": false,
+              "PublishAllPorts": false,
+              "ReadonlyRootfs": false,
+              "SecurityOpt": null,
+              "UTSMode": "",
+              "UsernsMode": "",
+              "ShmSize": 67108864,
+              "Runtime": "runc",
+              "Isolation": "",
+              "CpuShares": 0,
+              "Memory": 0,
+              "NanoCpus": 0,
+              "CgroupParent": "",
+              "BlkioWeight": 0,
+              "BlkioWeightDevice": null,
+              "BlkioDeviceReadBps": null,
+              "BlkioDeviceWriteBps": null,
+              "BlkioDeviceReadIOps": null,
+              "BlkioDeviceWriteIOps": null,
+              "CpuPeriod": 0,
+              "CpuQuota": 0,
+              "CpuRealtimePeriod": 0,
+              "CpuRealtimeRuntime": 0,
+              "CpusetCpus": "",
+              "CpusetMems": "",
+              "Devices": null,
+              "DeviceCgroupRules": null,
+              "DeviceRequests": null,
+              "MemoryReservation": 0,
+              "MemorySwap": 0,
+              "MemorySwappiness": null,
+              "OomKillDisable": null,
+              "PidsLimit": null,
+              "Ulimits": null,
+              "CpuCount": 0,
+              "CpuPercent": 0,
+              "IOMaximumIOps": 0,
+              "IOMaximumBandwidth": 0,
+              "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+              ],
+              "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+              ]
+            },
+            "Storage": {
+              "RootFS": {
+                "Snapshot": {
+                  "Name": "overlayfs"
+                }
+              }
+            },
+            "Mounts": [
+              {
+                "Type": "bind",
+                "Source": "/home/cbn/labrador/logs/nginx",
+                "Destination": "/var/log/nginx",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+              }
+            ],
+            "Config": {
+              "Hostname": "98664b10456c",
+              "Domainname": "",
+              "User": "",
+              "AttachStdin": false,
+              "AttachStdout": true,
+              "AttachStderr": true,
+              "ExposedPorts": {
+                "80/tcp": {}
+              },
+              "Tty": false,
+              "OpenStdin": false,
+              "StdinOnce": false,
+              "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.29.4",
+                "PKG_RELEASE=1",
+                "DYNPKG_RELEASE=1",
+                "NJS_VERSION=0.9.4",
+                "NJS_RELEASE=1"
+              ],
+              "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+              ],
+              "Image": "labrador-frontend",
+              "Volumes": null,
+              "WorkingDir": "/",
+              "Entrypoint": [
+                "/docker-entrypoint.sh"
+              ],
+              "Labels": {
+                "com.docker.compose.config-hash": "dc8064ba92eea785e0b8942353bcb2d2c5b1304c0ee473cf52dc9295a067812f",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:754daa020d893846b4fa491de0f3a93c5946c5429325fd781300a78aa6051650",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "labrador",
+                "com.docker.compose.project.config_files": "/home/cbn/labrador/docker-compose.yml",
+                "com.docker.compose.project.working_dir": "/home/cbn/labrador",
+                "com.docker.compose.replace": "labrador_frontend",
+                "com.docker.compose.service": "frontend",
+                "com.docker.compose.version": "5.0.0",
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+              },
+              "StopSignal": "SIGQUIT"
+            },
+            "NetworkSettings": {
+              "SandboxID": "604f876e1e6c9eb9785b9c5083f0868d3aea81d589763b15f7211b79d9b6cbd5",
+              "SandboxKey": "/var/run/docker/netns/604f876e1e6c",
+              "Ports": {
+                "80/tcp": [
+                  {
+                    "HostIp": "0.0.0.0",
+                    "HostPort": "80"
+                  },
+                  {
+                    "HostIp": "::",
+                    "HostPort": "80"
+                  }
+                ]
+              },
+              "Networks": {
+                "labrador_network": {
+                  "IPAMConfig": null,
+                  "Links": null,
+                  "Aliases": [
+                    "labrador_frontend",
+                    "frontend"
+                  ],
+                  "DriverOpts": null,
+                  "GwPriority": 0,
+                  "NetworkID": "84f48d9c8962e1709c7376b75992bfc8d0fe8a1a818cb28d431757287ecaf671",
+                  "EndpointID": "e1270f37fe402d62059edd1f8ca75efb146bb85702f16db35371afee7d6bff98",
+                  "Gateway": "172.18.0.1",
+                  "IPAddress": "172.18.0.3",
+                  "MacAddress": "3a:1e:c0:59:91:91",
+                  "IPPrefixLen": 16,
+                  "IPv6Gateway": "",
+                  "GlobalIPv6Address": "",
+                  "GlobalIPv6PrefixLen": 0,
+                  "DNSNames": [
+                    "labrador_frontend",
+                    "frontend",
+                    "98664b10456c"
+                  ]
+                }
+              }
+            },
+            "ImageManifestDescriptor": {
+              "mediaType": "application/vnd.oci.image.manifest.v1+json",
+              "digest": "sha256:a48b8f8c89bc99067e6e20b2d33d47c8255e0596898daa3abb81aa1116c10ff6",
+              "size": 2189,
+              "platform": {
+                "architecture": "arm64",
+                "os": "linux"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "standalone_containers_sample": [
+      {
+        "Command": "\"/entrypoint.sh python -m api.main\"",
+        "CreatedAt": "2025-12-14 10:07:01 +0800 HKT",
+        "ID": "510df2d39007b88650b6c3525a3b527fedbc925b801c863aa05e1efff5548512",
+        "Image": "labrador-backend-full",
+        "Labels": "com.docker.compose.config-hash=79c697204ee98cba76d1b1e16c1eeab2df90873c4afe04ccadfc8eef9466d382,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:584db3f331d25838ca9d5e1d2885c5130e482a792d7b6bf4cf10c82ee0e500f1,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/home/cbn/labrador/docker-compose.yml,com.docker.compose.project.working_dir=/home/cbn/labrador,com.docker.compose.project=labrador,com.docker.compose.replace=labrador_backend,com.docker.compose.service=backend-full,com.docker.compose.version=5.0.0",
+        "LocalVolumes": "0",
+        "Mounts": "/home/cbn/labrador/labrador.db,/home/cbn/labrador/logs,/dev",
+        "Names": "labrador_backend",
+        "Networks": "labrador_network",
+        "Platform": {
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "Ports": "0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp",
+        "RunningFor": "2 weeks ago",
+        "Size": "0B",
+        "State": "running",
+        "Status": "Up 2 weeks"
+      },
+      {
+        "Command": "\"/docker-entrypoint.sh nginx -g 'daemon off;'\"",
+        "CreatedAt": "2025-12-14 10:07:01 +0800 HKT",
+        "ID": "98664b10456c05fa518bb1a60f8d694c1687b94c02a18170e5027589b5fdaf32",
+        "Image": "labrador-frontend",
+        "Labels": "com.docker.compose.config-hash=dc8064ba92eea785e0b8942353bcb2d2c5b1304c0ee473cf52dc9295a067812f,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.image=sha256:754daa020d893846b4fa491de0f3a93c5946c5429325fd781300a78aa6051650,com.docker.compose.oneoff=False,com.docker.compose.project.config_files=/home/cbn/labrador/docker-compose.yml,com.docker.compose.project.working_dir=/home/cbn/labrador,com.docker.compose.project=labrador,com.docker.compose.replace=labrador_frontend,com.docker.compose.service=frontend,com.docker.compose.version=5.0.0,maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>",
+        "LocalVolumes": "0",
+        "Mounts": "/home/cbn/labrador/logs/nginx",
+        "Names": "labrador_frontend",
+        "Networks": "labrador_network",
+        "Platform": {
+          "architecture": "arm64",
+          "os": "linux"
+        },
+        "Ports": "0.0.0.0:80->80/tcp, [::]:80->80/tcp",
+        "RunningFor": "2 weeks ago",
+        "Size": "0B",
+        "State": "running",
+        "Status": "Up 2 weeks"
+      },
+      {
+        "Command": "\"/hello\"",
+        "CreatedAt": "2025-12-05 21:11:05 +0800 HKT",
+        "ID": "7583f25b304a6ca2834310a516659841220437ab0e1dad0385756c38ace14229",
+        "Image": "hello-world",
+        "Labels": "",
+        "LocalVolumes": "0",
+        "Mounts": "",
+        "Names": "recursing_chandrasekhar",
+        "Networks": "bridge",
+        "Platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "Ports": "",
+        "RunningFor": "3 weeks ago",
+        "Size": "0B",
+        "State": "exited",
+        "Status": "Exited (0) 3 weeks ago"
+      },
+      {
+        "Command": "\"/hello\"",
+        "CreatedAt": "2025-12-05 21:05:42 +0800 HKT",
+        "ID": "dd37284fa7f1766492465946c136d7746ebae86ab110e78df8dfda9b18e5925f",
+        "Image": "hello-world",
+        "Labels": "",
+        "LocalVolumes": "0",
+        "Mounts": "",
+        "Names": "sleepy_feynman",
+        "Networks": "bridge",
+        "Platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "Ports": "",
+        "RunningFor": "3 weeks ago",
+        "Size": "0B",
+        "State": "exited",
+        "Status": "Exited (0) 3 weeks ago"
+      }
+    ],
+    "notes": []
+  }
+}

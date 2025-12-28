@@ -1,0 +1,11 @@
+{
+  "schema": "pplx_infra_netprobe_v1",
+  "collected_at_utc": "2025-12-28T01:11:06.817076+00:00",
+  "host_platform": "Linux-6.14.0-37-generic-x86_64-with-glibc2.40",
+  "default_gateway_info": "default via 192.168.50.1 dev enp4s0 proto dhcp src 192.168.50.57 metric 100",
+  "neighbor_table": "192.168.50.1 dev enp4s0 lladdr fc:34:97:1c:f1:40 REACHABLE \n192.168.50.201 dev enp4s0 lladdr 02:42:c0:a8:32:c9 STALE \n192.168.50.11 dev enp4s0 lladdr e0:bb:9e:43:c7:f3 STALE",
+  "target_cidr": "10.10.1.0/24",
+  "nmap_ping_scan": {
+    "raw": "Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-12-28 09:11 HKT\nNmap scan report for unifi.marina (10.10.1.1)\nHost is up (0.0025s latency).\nNmap scan report for zima.marina.cbnano.com (10.10.1.2)\nHost is up (0.0026s latency).\nNmap scan report for BRN94DDF895DE52.marina (10.10.1.9)\nHost is up (0.036s latency).\nNmap scan report for lab.marina (10.10.1.130)\nHost is up (0.0034s latency).\nNmap scan report for 10.10.1.153\nHost is up (0.0039s latency).\nNmap scan report for ae86.marina (10.10.1.237)\nHost is up (0.0027s latency).\nNmap done: 256 IP addresses (6 hosts up) scanned in 2.41 seconds"
+  }
+}
