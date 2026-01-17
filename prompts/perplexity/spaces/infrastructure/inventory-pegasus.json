@@ -1,6 +1,6 @@
 {
   "schema": "pplx_infra_inventory_v2",
-  "collected_at_utc": "2025-12-28T03:09:04.277829+00:00",
+  "collected_at_utc": "2026-01-17T03:05:02.853750+00:00",
   "identity": {
     "hostname": "pegasus",
     "fqdn": null,
@@ -11,7 +11,7 @@
     "platform_release": "6.14.0-37-generic",
     "platform_version": "#37~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 10:25:38 UTC 2",
     "machine": "x86_64",
-    "python": "3.11.14",
+    "python": "3.11.11",
     "distro_id": "ubuntu",
     "distro_name": "Ubuntu 24.04.3 LTS",
     "distro_version": "24.04"
@@ -20,7 +20,7 @@
   "cpu": {
     "physical_cores": null,
     "logical_cores": null,
-    "model": "Intel(R) Core(TM) i7-14700K"
+    "model": "AMD Ryzen 7 7800X3D 8-Core Processor"
   },
   "memory": {
     "total_bytes": null
@@ -28,20 +28,26 @@
   "gpu": {
     "devices": [
       {
-        "name": "NVIDIA GeForce RTX 5060 Ti",
+        "name": "NVIDIA GeForce RTX 5090",
         "vendor": "NVIDIA Corporation",
         "pci_slot": "00000000:01:00.0",
         "type": "nvidia",
         "driver_version": "580.95.05",
-        "memory_total": "16311 MiB"
+        "memory_total": "32607 MiB"
+      },
+      {
+        "name": "Raphael",
+        "vendor": "Advanced Micro Devices, Inc. [AMD/ATI]",
+        "pci_slot": "11:00.0",
+        "type": "pci_device"
       }
     ],
     "software": {}
   },
   "motherboard": {
-    "vendor": "ASRock",
-    "name": "B760M-HDV/M.2 D4",
-    "version": ""
+    "vendor": "Micro-Star International Co., Ltd.",
+    "name": "B850M GAMING PLUS WIFI (MS-7E66)",
+    "version": "1.0"
   },
   "storage": {
     "physical_disks": [
@@ -60,17 +66,6 @@
         "name": "loop1",
         "model": null,
         "serial": null,
-        "size": "74M",
-        "type": "loop",
-        "tran": null,
-        "rota": false,
-        "mountpoint": "/snap/core22/2193",
-        "fstype": "squashfs"
-      },
-      {
-        "name": "loop2",
-        "model": null,
-        "serial": null,
         "size": "73.9M",
         "type": "loop",
         "tran": null,
@@ -82,22 +77,22 @@
         "name": "loop3",
         "model": null,
         "serial": null,
-        "size": "18.5M",
+        "size": "516M",
         "type": "loop",
         "tran": null,
         "rota": false,
-        "mountpoint": "/snap/firmware-updater/210",
+        "mountpoint": "/snap/gnome-42-2204/202",
         "fstype": "squashfs"
       },
       {
         "name": "loop4",
         "model": null,
         "serial": null,
-        "size": "11.1M",
+        "size": "91.7M",
         "type": "loop",
         "tran": null,
         "rota": false,
-        "mountpoint": "/snap/firmware-updater/167",
+        "mountpoint": "/snap/gtk-common-themes/1535",
         "fstype": "squashfs"
       },
       {
@@ -115,6 +110,17 @@
         "name": "loop6",
         "model": null,
         "serial": null,
+        "size": "11.1M",
+        "type": "loop",
+        "tran": null,
+        "rota": false,
+        "mountpoint": "/snap/firmware-updater/167",
+        "fstype": "squashfs"
+      },
+      {
+        "name": "loop7",
+        "model": null,
+        "serial": null,
         "size": "49.3M",
         "type": "loop",
         "tran": null,
@@ -123,40 +129,7 @@
         "fstype": "squashfs"
       },
       {
-        "name": "loop7",
-        "model": null,
-        "serial": null,
-        "size": "516M",
-        "type": "loop",
-        "tran": null,
-        "rota": false,
-        "mountpoint": "/snap/gnome-42-2204/202",
-        "fstype": "squashfs"
-      },
-      {
         "name": "loop8",
-        "model": null,
-        "serial": null,
-        "size": "91.7M",
-        "type": "loop",
-        "tran": null,
-        "rota": false,
-        "mountpoint": "/snap/gtk-common-themes/1535",
-        "fstype": "squashfs"
-      },
-      {
-        "name": "loop9",
-        "model": null,
-        "serial": null,
-        "size": "50.9M",
-        "type": "loop",
-        "tran": null,
-        "rota": false,
-        "mountpoint": "/snap/snapd/25577",
-        "fstype": "squashfs"
-      },
-      {
-        "name": "loop10",
         "model": null,
         "serial": null,
         "size": "576K",
@@ -167,39 +140,26 @@
         "fstype": "squashfs"
       },
       {
-        "name": "sda",
-        "model": "ADATA SU650",
-        "serial": "2I0120056476",
-        "size": "223.6G",
-        "type": "disk",
-        "tran": "sata",
+        "name": "loop9",
+        "model": null,
+        "serial": null,
+        "size": "73.9M",
+        "type": "loop",
+        "tran": null,
         "rota": false,
-        "mountpoint": null,
-        "fstype": null,
-        "children": [
-          {
-            "name": "sda1",
-            "model": null,
-            "serial": null,
-            "size": "1G",
-            "type": "part",
-            "tran": null,
-            "rota": false,
-            "mountpoint": null,
-            "fstype": "vfat"
-          },
-          {
-            "name": "sda2",
-            "model": null,
-            "serial": null,
-            "size": "222.5G",
-            "type": "part",
-            "tran": null,
-            "rota": false,
-            "mountpoint": null,
-            "fstype": "ext4"
-          }
-        ]
+        "mountpoint": "/snap/core22/2216",
+        "fstype": "squashfs"
+      },
+      {
+        "name": "loop10",
+        "model": null,
+        "serial": null,
+        "size": "18.5M",
+        "type": "loop",
+        "tran": null,
+        "rota": false,
+        "mountpoint": "/snap/firmware-updater/210",
+        "fstype": "squashfs"
       },
       {
         "name": "nvme0n1",
@@ -216,7 +176,7 @@
             "name": "nvme0n1p1",
             "model": null,
             "serial": null,
-            "size": "649.5M",
+            "size": "1G",
             "type": "part",
             "tran": "nvme",
             "rota": false,
@@ -227,56 +187,12 @@
             "name": "nvme0n1p2",
             "model": null,
             "serial": null,
-            "size": "1M",
+            "size": "930.5G",
             "type": "part",
             "tran": "nvme",
             "rota": false,
             "mountpoint": null,
-            "fstype": null
-          },
-          {
-            "name": "nvme0n1p3",
-            "model": null,
-            "serial": null,
-            "size": "127M",
-            "type": "part",
-            "tran": "nvme",
-            "rota": false,
-            "mountpoint": null,
-            "fstype": null
-          },
-          {
-            "name": "nvme0n1p4",
-            "model": null,
-            "serial": null,
-            "size": "929.9G",
-            "type": "part",
-            "tran": "nvme",
-            "rota": false,
-            "mountpoint": null,
-            "fstype": "ntfs"
-          },
-          {
-            "name": "nvme0n1p5",
-            "model": null,
-            "serial": null,
-            "size": "512K",
-            "type": "part",
-            "tran": "nvme",
-            "rota": false,
-            "mountpoint": null,
-            "fstype": null
-          },
-          {
-            "name": "nvme0n1p6",
-            "model": null,
-            "serial": null,
-            "size": "906M",
-            "type": "part",
-            "tran": "nvme",
-            "rota": false,
-            "mountpoint": null,
-            "fstype": "ntfs"
+            "fstype": "ext4"
           }
         ]
       },
@@ -310,7 +226,7 @@
             "type": "part",
             "tran": "nvme",
             "rota": false,
-            "mountpoint": "/run/timeshift/13412/backup",
+            "mountpoint": "/",
             "fstype": "ext4"
           }
         ]
@@ -321,38 +237,19 @@
   "network": {
     "interfaces": {
       "docker0": {
-        "mac": "36:29:b4:6e:dc:02",
+        "mac": "ee:d9:67:82:d2:ca",
         "ipv4": [
           {
             "ip": "172.17.0.1",
             "netmask": "16"
           }
         ],
-        "ipv6": [],
-        "is_up": false,
-        "speed_mbps": null
-      },
-      "enp4s0": {
-        "mac": "9c:6b:00:a2:0e:dd",
-        "ipv4": [
+        "ipv6": [
           {
-            "ip": "192.168.50.57",
-            "netmask": "24"
+            "ip": "fe80::ecd9:67ff:fe82:d2ca",
+            "netmask": "64"
           }
         ],
-        "ipv6": [],
-        "is_up": true,
-        "speed_mbps": 1000
-      },
-      "cbn": {
-        "mac": "",
-        "ipv4": [
-          {
-            "ip": "10.10.254.12",
-            "netmask": "32"
-          }
-        ],
-        "ipv6": [],
         "is_up": false,
         "speed_mbps": null
       },
@@ -372,20 +269,51 @@
         ],
         "is_up": false,
         "speed_mbps": null
+      },
+      "wlp13s0": {
+        "mac": "dc:56:7b:2e:3d:85",
+        "ipv4": [],
+        "ipv6": [],
+        "is_up": false,
+        "speed_mbps": null
+      },
+      "enp12s0": {
+        "mac": "34:5a:60:c6:22:7c",
+        "ipv4": [
+          {
+            "ip": "10.10.1.65",
+            "netmask": "24"
+          }
+        ],
+        "ipv6": [
+          {
+            "ip": "fe80::365a:60ff:fec6:227c",
+            "netmask": "64"
+          }
+        ],
+        "is_up": true,
+        "speed_mbps": 1000
       }
     },
-    "default_gateway": "192.168.50.1",
+    "default_gateway": "10.10.1.1",
     "dns_servers": [
       "127.0.0.53"
     ],
     "hardware": [
       {
         "vendor": "Realtek Semiconductor Co., Ltd.",
-        "name": "RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet Controller",
-        "pci_slot": "04:00.0",
+        "name": "Device 8126",
+        "pci_slot": "0c:00.0",
         "type": "Ethernet controller",
-        "interface_name": "enp4s0",
+        "interface_name": "enp12s0",
         "current_link_speed_mbps": 1000
+      },
+      {
+        "vendor": "MEDIATEK Corp.",
+        "name": "Device 7925",
+        "pci_slot": "0d:00.0",
+        "type": "Network controller",
+        "interface_name": "wlp13s0"
       }
     ]
   },
@@ -396,19 +324,69 @@
       "raw": "Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
     },
     {
-      "id": "0db0:0b5a",
-      "name": "Micro Star International MSI GK50 LOW PROFILE Gaming Keyboard",
-      "raw": "Bus 001 Device 002: ID 0db0:0b5a Micro Star International MSI GK50 LOW PROFILE Gaming Keyboard"
+      "id": "05e3:0610",
+      "name": "Genesys Logic, Inc. Hub",
+      "raw": "Bus 001 Device 002: ID 05e3:0610 Genesys Logic, Inc. Hub"
+    },
+    {
+      "id": "0489:e14f",
+      "name": "Foxconn / Hon Hai Wireless_Device",
+      "raw": "Bus 001 Device 003: ID 0489:e14f Foxconn / Hon Hai Wireless_Device"
+    },
+    {
+      "id": "3554:fa09",
+      "name": "Compx GHOST 2.4G",
+      "raw": "Bus 001 Device 004: ID 3554:fa09 Compx GHOST 2.4G"
+    },
+    {
+      "id": "0db0:0076",
+      "name": "Micro Star International MYSTIC LIGHT",
+      "raw": "Bus 001 Device 005: ID 0db0:0076 Micro Star International MYSTIC LIGHT"
     },
     {
       "id": "046d:c52b",
       "name": "Logitech, Inc. Unifying Receiver",
-      "raw": "Bus 001 Device 003: ID 046d:c52b Logitech, Inc. Unifying Receiver"
+      "raw": "Bus 001 Device 006: ID 046d:c52b Logitech, Inc. Unifying Receiver"
     },
     {
       "id": "1d6b:0003",
       "name": "Linux Foundation 3.0 root hub",
       "raw": "Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub"
+    },
+    {
+      "id": "05e3:0620",
+      "name": "Genesys Logic, Inc. GL3523 Hub",
+      "raw": "Bus 002 Device 002: ID 05e3:0620 Genesys Logic, Inc. GL3523 Hub"
+    },
+    {
+      "id": "1d6b:0002",
+      "name": "Linux Foundation 2.0 root hub",
+      "raw": "Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    },
+    {
+      "id": "1d6b:0003",
+      "name": "Linux Foundation 3.0 root hub",
+      "raw": "Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub"
+    },
+    {
+      "id": "1d6b:0002",
+      "name": "Linux Foundation 2.0 root hub",
+      "raw": "Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    },
+    {
+      "id": "1d6b:0003",
+      "name": "Linux Foundation 3.0 root hub",
+      "raw": "Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub"
+    },
+    {
+      "id": "1d6b:0002",
+      "name": "Linux Foundation 2.0 root hub",
+      "raw": "Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub"
+    },
+    {
+      "id": "1d6b:0003",
+      "name": "Linux Foundation 3.0 root hub",
+      "raw": "Bus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub"
     }
   ],
   "system_packages": [
@@ -456,7 +434,7 @@
     },
     {
       "name": "alsa-ucm-conf",
-      "version": "1.2.10-1ubuntu5.7",
+      "version": "1.2.10-1ubuntu5.8",
       "arch": "all",
       "summary": "",
       "manager": "dpkg"
@@ -679,6 +657,27 @@
       "manager": "dpkg"
     },
     {
+      "name": "binutils",
+      "version": "2.42-4ubuntu2.8",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "binutils-common",
+      "version": "2.42-4ubuntu2.8",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "binutils-x86-64-linux-gnu",
+      "version": "2.42-4ubuntu2.8",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "bluez",
       "version": "5.72-0ubuntu5.5",
       "arch": "amd64",
@@ -749,6 +748,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "build-essential",
+      "version": "12.10ubuntu1",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "busybox-initramfs",
       "version": "1:1.36.1-6ubuntu3.1",
       "arch": "amd64",
@@ -763,15 +769,15 @@
       "manager": "dpkg"
     },
     {
-      "name": "ca-certificates",
-      "version": "20240203",
-      "arch": "all",
+      "name": "bzip2",
+      "version": "1.0.8-5.1build0.1",
+      "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
-      "name": "chrome-gnome-shell",
-      "version": "42.1-4",
+      "name": "ca-certificates",
+      "version": "20240203",
       "arch": "all",
       "summary": "",
       "manager": "dpkg"
@@ -1121,7 +1127,7 @@
     },
     {
       "name": "dirmngr",
-      "version": "2.4.4-2ubuntu17.3",
+      "version": "2.4.4-2ubuntu17.4",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -1136,6 +1142,13 @@
     {
       "name": "distro-info-data",
       "version": "0.60ubuntu0.5",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dkms",
+      "version": "3.0.11-1ubuntu13",
       "arch": "all",
       "summary": "",
       "manager": "dpkg"
@@ -1191,28 +1204,28 @@
     },
     {
       "name": "docker-ce",
-      "version": "5:29.1.3-1~ubuntu.24.04~noble",
+      "version": "5:29.1.5-1~ubuntu.24.04~noble",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "docker-ce-cli",
-      "version": "5:29.1.3-1~ubuntu.24.04~noble",
+      "version": "5:29.1.5-1~ubuntu.24.04~noble",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "docker-ce-rootless-extras",
-      "version": "5:29.1.3-1~ubuntu.24.04~noble",
+      "version": "5:29.1.5-1~ubuntu.24.04~noble",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "docker-compose-plugin",
-      "version": "5.0.0-1~ubuntu.24.04~noble",
+      "version": "5.0.1-1~ubuntu.24.04~noble",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -1228,6 +1241,13 @@
       "name": "dpkg",
       "version": "1.22.6ubuntu6.5",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "dpkg-dev",
+      "version": "1.22.6ubuntu6.5",
+      "arch": "all",
       "summary": "",
       "manager": "dpkg"
     },
@@ -1344,162 +1364,8 @@
       "manager": "dpkg"
     },
     {
-      "name": "fcitx5",
-      "version": "5.1.7-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-chinese-addons",
-      "version": "5.1.3-1build3",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-chinese-addons-bin",
-      "version": "5.1.3-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-chinese-addons-data",
-      "version": "5.1.3-1build3",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-config-qt",
-      "version": "5.1.4-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-data",
-      "version": "5.1.7-1build3",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-frontend-all",
-      "version": "5.1.7-1build3",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-frontend-gtk2",
-      "version": "5.1.1-1build2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-frontend-gtk3",
-      "version": "5.1.1-1build2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-frontend-gtk4",
-      "version": "5.1.1-1build2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-frontend-qt5",
-      "version": "5.1.4-1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-frontend-qt6",
-      "version": "5.1.4-1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-module-chttrans",
-      "version": "5.1.3-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-module-cloudpinyin",
-      "version": "5.1.3-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-module-fullwidth",
-      "version": "5.1.3-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-module-lua",
-      "version": "5.0.12-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-module-lua-common",
-      "version": "5.0.12-1",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-module-pinyinhelper",
-      "version": "5.1.3-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-module-punctuation",
-      "version": "5.1.3-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-modules",
-      "version": "5.1.7-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-pinyin",
-      "version": "5.1.3-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-pinyin-gui",
-      "version": "5.1.3-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "fcitx5-table",
-      "version": "5.1.3-1build3",
+      "name": "fakeroot",
+      "version": "1.33-1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -1687,6 +1553,34 @@
       "manager": "dpkg"
     },
     {
+      "name": "g++",
+      "version": "4:13.2.0-7ubuntu1",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "g++-13",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "g++-13-x86-64-linux-gnu",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "g++-x86-64-linux-gnu",
+      "version": "4:13.2.0-7ubuntu1",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "gamemode",
       "version": "1.8.1-2build1",
       "arch": "amd64",
@@ -1701,7 +1595,28 @@
       "manager": "dpkg"
     },
     {
+      "name": "gcc",
+      "version": "4:13.2.0-7ubuntu1",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gcc-13",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "gcc-13-base",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gcc-13-x86-64-linux-gnu",
       "version": "13.3.0-6ubuntu2~24.04",
       "arch": "amd64",
       "summary": "",
@@ -1710,6 +1625,20 @@
     {
       "name": "gcc-14-base",
       "version": "14.2.0-4ubuntu2~24.04",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gcc-14-base",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "gcc-x86-64-linux-gnu",
+      "version": "4:13.2.0-7ubuntu1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -1744,7 +1673,7 @@
     },
     {
       "name": "gdm3",
-      "version": "46.2-1ubuntu1~24.04.5",
+      "version": "46.2-1ubuntu1~24.04.6",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -1842,7 +1771,7 @@
     },
     {
       "name": "gir1.2-gdm-1.0",
-      "version": "46.2-1ubuntu1~24.04.5",
+      "version": "46.2-1ubuntu1~24.04.6",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -1863,7 +1792,7 @@
     },
     {
       "name": "gir1.2-glib-2.0",
-      "version": "2.80.0-6ubuntu3.5",
+      "version": "2.80.0-6ubuntu3.6",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -1968,28 +1897,28 @@
     },
     {
       "name": "gir1.2-javascriptcoregtk-4.1",
-      "version": "2.50.2-0ubuntu0.24.04.2",
+      "version": "2.50.4-0ubuntu0.24.04.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gir1.2-javascriptcoregtk-6.0",
-      "version": "2.50.2-0ubuntu0.24.04.2",
+      "version": "2.50.4-0ubuntu0.24.04.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gir1.2-mutter-14",
-      "version": "46.2-1ubuntu0.24.04.13",
+      "version": "46.2-1ubuntu0.24.04.14",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gir1.2-nm-1.0",
-      "version": "1.46.0-1ubuntu2.4",
+      "version": "1.46.0-1ubuntu2.5",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -2080,14 +2009,14 @@
     },
     {
       "name": "gir1.2-webkit-6.0",
-      "version": "2.50.2-0ubuntu0.24.04.2",
+      "version": "2.50.4-0ubuntu0.24.04.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gir1.2-webkit2-4.1",
-      "version": "2.50.2-0ubuntu0.24.04.2",
+      "version": "2.50.4-0ubuntu0.24.04.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -2103,13 +2032,6 @@
       "name": "git",
       "version": "1:2.43.0-1ubuntu7.3",
       "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "git-man",
-      "version": "1:2.43.0-1ubuntu7.3",
-      "arch": "all",
       "summary": "",
       "manager": "dpkg"
     },
@@ -2166,13 +2088,6 @@
       "name": "gnome-bluetooth-sendto",
       "version": "46.0-1ubuntu1",
       "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "gnome-browser-connector",
-      "version": "42.1-4",
-      "arch": "all",
       "summary": "",
       "manager": "dpkg"
     },
@@ -2290,7 +2205,7 @@
     },
     {
       "name": "gnome-remote-desktop",
-      "version": "46.3-0ubuntu1.1",
+      "version": "46.3-0ubuntu1.2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -2359,20 +2274,6 @@
       "manager": "dpkg"
     },
     {
-      "name": "gnome-shell-extension-manager",
-      "version": "0.5.0-1build1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "gnome-shell-extension-prefs",
-      "version": "46.0-0ubuntu6~24.04.12",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
       "name": "gnome-shell-extension-ubuntu-dock",
       "version": "90ubuntu3",
       "arch": "all",
@@ -2383,34 +2284,6 @@
       "name": "gnome-shell-extension-ubuntu-tiling-assistant",
       "version": "46-1ubuntu1.1",
       "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "gnome-software",
-      "version": "46.0-1ubuntu2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "gnome-software-common",
-      "version": "46.0-1ubuntu2",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "gnome-software-plugin-flatpak",
-      "version": "46.0-1ubuntu2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "gnome-software-plugin-snap",
-      "version": "46.0-1ubuntu2",
-      "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
@@ -2472,63 +2345,63 @@
     },
     {
       "name": "gnupg",
-      "version": "2.4.4-2ubuntu17.3",
+      "version": "2.4.4-2ubuntu17.4",
       "arch": "all",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gnupg-l10n",
-      "version": "2.4.4-2ubuntu17.3",
+      "version": "2.4.4-2ubuntu17.4",
       "arch": "all",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gnupg-utils",
-      "version": "2.4.4-2ubuntu17.3",
+      "version": "2.4.4-2ubuntu17.4",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gpg",
-      "version": "2.4.4-2ubuntu17.3",
+      "version": "2.4.4-2ubuntu17.4",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gpg-agent",
-      "version": "2.4.4-2ubuntu17.3",
+      "version": "2.4.4-2ubuntu17.4",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gpg-wks-client",
-      "version": "2.4.4-2ubuntu17.3",
+      "version": "2.4.4-2ubuntu17.4",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gpgconf",
-      "version": "2.4.4-2ubuntu17.3",
+      "version": "2.4.4-2ubuntu17.4",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gpgsm",
-      "version": "2.4.4-2ubuntu17.3",
+      "version": "2.4.4-2ubuntu17.4",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "gpgv",
-      "version": "2.4.4-2ubuntu17.3",
+      "version": "2.4.4-2ubuntu17.4",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -2759,14 +2632,14 @@
     },
     {
       "name": "heif-gdk-pixbuf",
-      "version": "1.17.6-1ubuntu4.1",
+      "version": "1.17.6-1ubuntu4.2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "heif-thumbnailer",
-      "version": "1.17.6-1ubuntu4.1",
+      "version": "1.17.6-1ubuntu4.2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -3081,14 +2954,14 @@
     },
     {
       "name": "keyboxd",
-      "version": "2.4.4-2ubuntu17.3",
+      "version": "2.4.4-2ubuntu17.4",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "klibc-utils",
-      "version": "2.0.13-4ubuntu0.1",
+      "version": "2.0.13-4ubuntu0.2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -3220,6 +3093,27 @@
       "manager": "dpkg"
     },
     {
+      "name": "libalgorithm-diff-perl",
+      "version": "1.201-1",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libalgorithm-diff-xs-perl",
+      "version": "0.04-8build3",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libalgorithm-merge-perl",
+      "version": "0.08-5",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libao-common",
       "version": "1.2.2+20180113-1.1ubuntu4",
       "arch": "all",
@@ -3271,6 +3165,13 @@
     {
       "name": "libargon2-1",
       "version": "0~20190702+dfsg-4build1",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libasan8",
+      "version": "14.2.0-4ubuntu2~24.04",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -3356,6 +3257,13 @@
       "name": "libatomic1",
       "version": "14.2.0-4ubuntu2~24.04",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libatomic1",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -3493,13 +3401,6 @@
       "manager": "dpkg"
     },
     {
-      "name": "libb2-1",
-      "version": "0.98.1-1.1build1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
       "name": "libbabeltrace1",
       "version": "1.5.11-3build3",
       "arch": "amd64",
@@ -3516,6 +3417,13 @@
     {
       "name": "libbdplus0",
       "version": "0.2.0-3build1",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libbinutils",
+      "version": "2.42-4ubuntu2.8",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -3612,13 +3520,6 @@
       "manager": "dpkg"
     },
     {
-      "name": "libboost-iostreams1.83.0",
-      "version": "1.83.0-2.1ubuntu3.1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
       "name": "libbpf1",
       "version": "1:1.3.0-2build2",
       "arch": "amd64",
@@ -3657,6 +3558,13 @@
       "name": "libbsd0",
       "version": "0.12.1-1build1.1",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libbsd0",
+      "version": "0.12.1-1build1.1",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -3710,6 +3618,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libc6",
+      "version": "2.39-0ubuntu8.6",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libc6-dbg",
       "version": "2.39-0ubuntu8.6",
       "arch": "amd64",
@@ -3725,7 +3640,7 @@
     },
     {
       "name": "libcaca0",
-      "version": "0.99.beta20-4build2",
+      "version": "0.99.beta20-4ubuntu0.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -3838,6 +3753,13 @@
     {
       "name": "libcbor0.10",
       "version": "0.10.2-1.2ubuntu2",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libcc1-0",
+      "version": "14.2.0-4ubuntu2~24.04",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -3985,6 +3907,20 @@
     {
       "name": "libcryptsetup12",
       "version": "2:2.7.0-1ubuntu4.2",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libctf-nobfd0",
+      "version": "2.42-4ubuntu2.8",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libctf0",
+      "version": "2.42-4ubuntu2.8",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -4200,9 +4136,9 @@
       "manager": "dpkg"
     },
     {
-      "name": "libdouble-conversion3",
-      "version": "3.3.0-1build1",
-      "arch": "amd64",
+      "name": "libdpkg-perl",
+      "version": "1.22.6ubuntu6.5",
+      "arch": "all",
       "summary": "",
       "manager": "dpkg"
     },
@@ -4210,6 +4146,13 @@
       "name": "libdrm-amdgpu1",
       "version": "2.4.122-1~ubuntu0.24.04.2",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdrm-amdgpu1",
+      "version": "2.4.122-1~ubuntu0.24.04.2",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -4224,6 +4167,13 @@
       "name": "libdrm-intel1",
       "version": "2.4.122-1~ubuntu0.24.04.2",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdrm-intel1",
+      "version": "2.4.122-1~ubuntu0.24.04.2",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -4245,6 +4195,13 @@
       "name": "libdrm2",
       "version": "2.4.122-1~ubuntu0.24.04.2",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libdrm2",
+      "version": "2.4.122-1~ubuntu0.24.04.2",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -4347,6 +4304,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libedit2",
+      "version": "3.1-20230828-1build1",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libeditorconfig0",
       "version": "0.12.7-0.1",
       "arch": "amd64",
@@ -4403,6 +4367,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libelf1t64",
+      "version": "0.190-1.1ubuntu0.1",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libenchant-2-2",
       "version": "2.3.3-2build2",
       "arch": "amd64",
@@ -4420,13 +4391,6 @@
       "name": "libepoxy0",
       "version": "1.5.10-1build1",
       "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "liberror-perl",
-      "version": "0.17029-2",
-      "arch": "all",
       "summary": "",
       "manager": "dpkg"
     },
@@ -4454,13 +4418,6 @@
     {
       "name": "libevdocument3-4t64",
       "version": "46.3.1-0ubuntu1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libevent-2.1-7t64",
-      "version": "2.1.12-stable-9ubuntu2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -4501,6 +4458,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libexpat1",
+      "version": "2.6.1-2ubuntu0.3",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libext2fs2t64",
       "version": "1.47.0-2.4~exp1ubuntu4.1",
       "arch": "amd64",
@@ -4515,57 +4479,15 @@
       "manager": "dpkg"
     },
     {
+      "name": "libfakeroot",
+      "version": "1.33-1",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libfastjson4",
       "version": "1.2304.0-1build1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libfcitx5-qt-data",
-      "version": "5.1.4-1build5",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libfcitx5-qt1",
-      "version": "5.1.4-1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libfcitx5-qt6-1",
-      "version": "5.1.4-1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libfcitx5config6",
-      "version": "5.1.7-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libfcitx5core7",
-      "version": "5.1.7-1build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libfcitx5gclient2",
-      "version": "5.1.1-1build2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libfcitx5utils2",
-      "version": "5.1.7-1build3",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -4581,6 +4503,13 @@
       "name": "libffi8",
       "version": "3.4.6-1build1",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libffi8",
+      "version": "3.4.6-1build1",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -4620,6 +4549,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libfile-fcntllock-perl",
+      "version": "0.22-4ubuntu5",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libfile-listing-perl",
       "version": "6.16-1",
       "arch": "all",
@@ -4643,13 +4579,6 @@
     {
       "name": "libflashrom1",
       "version": "1.3.0-2.1ubuntu2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libflatpak0",
-      "version": "1.14.6-1ubuntu0.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -4788,9 +4717,30 @@
       "manager": "dpkg"
     },
     {
+      "name": "libgbm1",
+      "version": "25.0.7-0ubuntu0.24.04.2",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgcc-13-dev",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libgcc-s1",
       "version": "14.2.0-4ubuntu2~24.04",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -4894,7 +4844,7 @@
     },
     {
       "name": "libgdm1",
-      "version": "46.2-1ubuntu1~24.04.5",
+      "version": "46.2-1ubuntu1~24.04.6",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -4992,21 +4942,21 @@
     },
     {
       "name": "libglib2.0-0t64",
-      "version": "2.80.0-6ubuntu3.5",
+      "version": "2.80.0-6ubuntu3.6",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libglib2.0-bin",
-      "version": "2.80.0-6ubuntu3.5",
+      "version": "2.80.0-6ubuntu3.6",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libglib2.0-data",
-      "version": "2.80.0-6ubuntu3.5",
+      "version": "2.80.0-6ubuntu3.6",
       "arch": "all",
       "summary": "",
       "manager": "dpkg"
@@ -5210,6 +5160,13 @@
     {
       "name": "libgpm2",
       "version": "1.20.7-11",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libgprofng0",
+      "version": "2.42-4ubuntu2.8",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -5537,13 +5494,6 @@
       "manager": "dpkg"
     },
     {
-      "name": "libharfbuzz-subset0",
-      "version": "8.3.0-2build2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
       "name": "libharfbuzz0b",
       "version": "8.3.0-2build2",
       "arch": "amd64",
@@ -5552,28 +5502,28 @@
     },
     {
       "name": "libheif-plugin-aomdec",
-      "version": "1.17.6-1ubuntu4.1",
+      "version": "1.17.6-1ubuntu4.2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libheif-plugin-aomenc",
-      "version": "1.17.6-1ubuntu4.1",
+      "version": "1.17.6-1ubuntu4.2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libheif-plugin-libde265",
-      "version": "1.17.6-1ubuntu4.1",
+      "version": "1.17.6-1ubuntu4.2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libheif1",
-      "version": "1.17.6-1ubuntu4.1",
+      "version": "1.17.6-1ubuntu4.2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -5670,6 +5620,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libhwasan0",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libhwy1t64",
       "version": "1.0.7-8.1build1",
       "arch": "amd64",
@@ -5719,6 +5676,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libicu74",
+      "version": "74.2-1ubuntu3.1",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libidn12",
       "version": "1.42-1build1",
       "arch": "amd64",
@@ -5729,6 +5693,13 @@
       "name": "libidn2-0",
       "version": "2.3.7-2build1.1",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libidn2-0",
+      "version": "2.3.7-2build1.1",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -5763,48 +5734,6 @@
     {
       "name": "libimagequant0",
       "version": "2.18.0-1build1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libime-bin",
-      "version": "1.1.5-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libime-data",
-      "version": "1.1.5-1",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libime-data-language-model",
-      "version": "1.1.5-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libimecore0",
-      "version": "1.1.5-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libimepinyin0",
-      "version": "1.1.5-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libimetable0",
-      "version": "1.1.5-1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -5908,6 +5837,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libitm1",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libiw30t64",
       "version": "30~pre9-16.1ubuntu2",
       "arch": "amd64",
@@ -5923,14 +5859,14 @@
     },
     {
       "name": "libjavascriptcoregtk-4.1-0",
-      "version": "2.50.2-0ubuntu0.24.04.2",
+      "version": "2.50.4-0ubuntu0.24.04.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libjavascriptcoregtk-6.0-1",
-      "version": "2.50.2-0ubuntu0.24.04.2",
+      "version": "2.50.4-0ubuntu0.24.04.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -6020,36 +5956,8 @@
       "manager": "dpkg"
     },
     {
-      "name": "libkf5itemviews-data",
-      "version": "5.115.0-0ubuntu5",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libkf5itemviews5",
-      "version": "5.115.0-0ubuntu5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libkf5widgetsaddons-data",
-      "version": "5.115.0-0ubuntu4",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libkf5widgetsaddons5",
-      "version": "5.115.0-0ubuntu4",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
       "name": "libklibc",
-      "version": "2.0.13-4ubuntu0.1",
+      "version": "2.0.13-4ubuntu0.2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -6167,13 +6075,6 @@
       "manager": "dpkg"
     },
     {
-      "name": "liblinear4",
-      "version": "2.3.0+dfsg-5build1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
       "name": "libllvm18",
       "version": "1:18.1.3-1ubuntu1",
       "arch": "amd64",
@@ -6184,6 +6085,13 @@
       "name": "libllvm20",
       "version": "1:20.1.2-0ubuntu1~24.04.2",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libllvm20",
+      "version": "1:20.1.2-0ubuntu1~24.04.2",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -6237,15 +6145,15 @@
       "manager": "dpkg"
     },
     {
-      "name": "libltdl7",
-      "version": "2.4.7-7build1",
+      "name": "liblsan0",
+      "version": "14.2.0-4ubuntu2~24.04",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
-      "name": "liblua5.3-0",
-      "version": "5.3.6-2build2",
+      "name": "libltdl7",
+      "version": "2.4.7-7build1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -6282,6 +6190,13 @@
       "name": "liblzma5",
       "version": "5.6.1+really5.4.5-1ubuntu0.2",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "liblzma5",
+      "version": "5.6.1+really5.4.5-1ubuntu0.2",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -6384,29 +6299,15 @@
       "manager": "dpkg"
     },
     {
-      "name": "libmd4c0",
-      "version": "0.4.8-1build1",
-      "arch": "amd64",
+      "name": "libmd0",
+      "version": "1.1.0-2build1.1",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libmediaart-2.0-0",
       "version": "1.9.6-1build2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libminiupnpc17",
-      "version": "2.2.6-1build2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libminizip1t64",
-      "version": "1:1.3.dfsg-3.1ubuntu2.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -6511,7 +6412,7 @@
     },
     {
       "name": "libmutter-14-0",
-      "version": "46.2-1ubuntu0.24.04.13",
+      "version": "46.2-1ubuntu0.24.04.14",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -6519,13 +6420,6 @@
     {
       "name": "libmysofa1",
       "version": "1.3.2+dfsg-2ubuntu2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libnatpmp1t64",
-      "version": "20230423-1.2build1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -6686,7 +6580,7 @@
     },
     {
       "name": "libnm0",
-      "version": "1.46.0-1ubuntu2.4",
+      "version": "1.46.0-1ubuntu2.5",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -6811,6 +6705,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libnvidia-compute-580",
+      "version": "580.95.05-0ubuntu0.24.04.3",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libnvidia-container-tools",
       "version": "1.18.1-1",
       "arch": "amd64",
@@ -6832,9 +6733,23 @@
       "manager": "dpkg"
     },
     {
+      "name": "libnvidia-decode-580",
+      "version": "580.95.05-0ubuntu0.24.04.3",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libnvidia-egl-wayland1",
       "version": "1:1.1.13-1ubuntu0.1",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnvidia-egl-wayland1",
+      "version": "1:1.1.13-1ubuntu0.1",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -6846,9 +6761,23 @@
       "manager": "dpkg"
     },
     {
+      "name": "libnvidia-encode-580",
+      "version": "580.95.05-0ubuntu0.24.04.3",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libnvidia-extra-580",
       "version": "580.95.05-0ubuntu0.24.04.3",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnvidia-extra-580",
+      "version": "580.95.05-0ubuntu0.24.04.3",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -6860,9 +6789,23 @@
       "manager": "dpkg"
     },
     {
+      "name": "libnvidia-fbc1-580",
+      "version": "580.95.05-0ubuntu0.24.04.3",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libnvidia-gl-580",
       "version": "580.95.05-0ubuntu0.24.04.3",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libnvidia-gl-580",
+      "version": "580.95.05-0ubuntu0.24.04.3",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -7126,9 +7069,9 @@
       "manager": "dpkg"
     },
     {
-      "name": "libpcre2-16-0",
-      "version": "10.42-4ubuntu2.1",
-      "arch": "amd64",
+      "name": "libpciaccess0",
+      "version": "0.17-3ubuntu0.24.04.2",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -7274,7 +7217,7 @@
     },
     {
       "name": "libpng16-16t64",
-      "version": "1.6.43-5ubuntu0.1",
+      "version": "1.6.43-5ubuntu0.3",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -7449,21 +7392,21 @@
     },
     {
       "name": "libpython3.12-minimal",
-      "version": "3.12.3-1ubuntu0.9",
+      "version": "3.12.3-1ubuntu0.10",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libpython3.12-stdlib",
-      "version": "3.12.3-1ubuntu0.9",
+      "version": "3.12.3-1ubuntu0.10",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libpython3.12t64",
-      "version": "3.12.3-1ubuntu0.9",
+      "version": "3.12.3-1ubuntu0.10",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -7504,232 +7447,8 @@
       "manager": "dpkg"
     },
     {
-      "name": "libqt5core5t64",
-      "version": "5.15.13+dfsg-1ubuntu1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5dbus5t64",
-      "version": "5.15.13+dfsg-1ubuntu1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5gui5t64",
-      "version": "5.15.13+dfsg-1ubuntu1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5network5t64",
-      "version": "5.15.13+dfsg-1ubuntu1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5positioning5",
-      "version": "5.15.13+dfsg-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5printsupport5t64",
-      "version": "5.15.13+dfsg-1ubuntu1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5qml5",
-      "version": "5.15.13+dfsg-1ubuntu0.1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5qmlmodels5",
-      "version": "5.15.13+dfsg-1ubuntu0.1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5quick5",
-      "version": "5.15.13+dfsg-1ubuntu0.1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5quickwidgets5",
-      "version": "5.15.13+dfsg-1ubuntu0.1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5svg5",
-      "version": "5.15.13-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5waylandclient5",
-      "version": "5.15.13-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5waylandcompositor5",
-      "version": "5.15.13-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5webchannel5",
-      "version": "5.15.13-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5webengine-data",
-      "version": "5.15.16+dfsg-3",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5webenginecore5",
-      "version": "5.15.16+dfsg-3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5webenginewidgets5",
-      "version": "5.15.16+dfsg-3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5widgets5t64",
-      "version": "5.15.13+dfsg-1ubuntu1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt5x11extras5",
-      "version": "5.15.13-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6core6t64",
-      "version": "6.4.2+dfsg-21.1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6dbus6t64",
-      "version": "6.4.2+dfsg-21.1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6gui6t64",
-      "version": "6.4.2+dfsg-21.1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6network6t64",
-      "version": "6.4.2+dfsg-21.1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6opengl6t64",
-      "version": "6.4.2+dfsg-21.1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6qml6",
-      "version": "6.4.2+dfsg-4build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6qmlmodels6",
-      "version": "6.4.2+dfsg-4build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6quick6",
-      "version": "6.4.2+dfsg-4build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6waylandclient6",
-      "version": "6.4.2-5build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6waylandcompositor6",
-      "version": "6.4.2-5build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6waylandeglclienthwintegration6",
-      "version": "6.4.2-5build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6waylandeglcompositorhwintegration6",
-      "version": "6.4.2-5build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6widgets6t64",
-      "version": "6.4.2+dfsg-21.1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libqt6wlshellintegration6",
-      "version": "6.4.2-5build3",
+      "name": "libquadmath0",
+      "version": "14.2.0-4ubuntu2~24.04",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -7758,13 +7477,6 @@
     {
       "name": "libraw1394-11",
       "version": "2.1.2-2build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libre2-10",
-      "version": "20230301-3build1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -7980,6 +7692,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libsensors5",
+      "version": "1:3.6.0-9build1",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libsepol2",
       "version": "3.5-2build1",
       "arch": "amd64",
@@ -7989,6 +7708,13 @@
     {
       "name": "libserd-0-0",
       "version": "0.32.2-1",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libsframe1",
+      "version": "2.42-4ubuntu2.8",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -8086,21 +7812,21 @@
     },
     {
       "name": "libsnmp-base",
-      "version": "5.9.4+dfsg-1.1ubuntu3.1",
+      "version": "5.9.4+dfsg-1.1ubuntu3.2",
       "arch": "all",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libsnmp40t64",
-      "version": "5.9.4+dfsg-1.1ubuntu3.1",
+      "version": "5.9.4+dfsg-1.1ubuntu3.2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libsodium23",
-      "version": "1.0.18-1build3",
+      "version": "1.0.18-1ubuntu0.24.04.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -8260,13 +7986,6 @@
       "manager": "dpkg"
     },
     {
-      "name": "libssh2-1t64",
-      "version": "1.11.0-4.1build2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
       "name": "libssl3t64",
       "version": "3.0.13-0ubuntu3.6",
       "arch": "amd64",
@@ -8302,9 +8021,23 @@
       "manager": "dpkg"
     },
     {
+      "name": "libstdc++-13-dev",
+      "version": "13.3.0-6ubuntu2~24.04",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libstdc++6",
       "version": "14.2.0-4ubuntu2~24.04",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -8387,7 +8120,7 @@
     },
     {
       "name": "libtasn1-6",
-      "version": "4.19.0-3ubuntu0.24.04.1",
+      "version": "4.19.0-3ubuntu0.24.04.2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -8423,13 +8156,6 @@
     {
       "name": "libtext-charwidth-perl",
       "version": "0.04-11build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libtext-engine-0.1-0",
-      "version": "0.1.1-4build2",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -8498,6 +8224,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libtinfo6",
+      "version": "6.4+20240113-1ubuntu2",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libtirpc-common",
       "version": "1.3.4+ds-1.1build1",
       "arch": "all",
@@ -8561,8 +8294,8 @@
       "manager": "dpkg"
     },
     {
-      "name": "libts0t64",
-      "version": "1.22-1.1build1",
+      "name": "libtsan2",
+      "version": "14.2.0-4ubuntu2~24.04",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -8659,6 +8392,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libubsan1",
+      "version": "14.2.0-4ubuntu2~24.04",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libuchardet0",
       "version": "0.0.8-1build1",
       "arch": "amd64",
@@ -8697,6 +8437,13 @@
       "name": "libunistring5",
       "version": "1.1-2build1.1",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libunistring5",
+      "version": "1.1-2build1.1",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -8925,6 +8672,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libwayland-client0",
+      "version": "1.22.0-2.1build1",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libwayland-cursor0",
       "version": "1.22.0-2.1build1",
       "arch": "amd64",
@@ -8946,6 +8700,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libwayland-server0",
+      "version": "1.22.0-2.1build1",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libwbclient0",
       "version": "2:4.19.5+dfsg-4ubuntu9.4",
       "arch": "amd64",
@@ -8954,14 +8715,14 @@
     },
     {
       "name": "libwebkit2gtk-4.1-0",
-      "version": "2.50.2-0ubuntu0.24.04.2",
+      "version": "2.50.4-0ubuntu0.24.04.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "libwebkitgtk-6.0-4",
-      "version": "2.50.2-0ubuntu0.24.04.2",
+      "version": "2.50.4-0ubuntu0.24.04.1",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -9100,6 +8861,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libx11-6",
+      "version": "2:1.8.7-1build1",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libx11-data",
       "version": "2:1.8.7-1build1",
       "arch": "all",
@@ -9117,6 +8885,13 @@
       "name": "libx11-xcb1",
       "version": "2:1.8.7-1build1",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libx11-xcb1",
+      "version": "2:1.8.7-1build1",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -9163,6 +8938,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libxau6",
+      "version": "1:1.0.9-1build6",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libxaw7",
       "version": "2:1.0.14-1build2",
       "arch": "amd64",
@@ -9191,9 +8973,9 @@
       "manager": "dpkg"
     },
     {
-      "name": "libxcb-ewmh2",
-      "version": "0.4.1-1.1build3",
-      "arch": "amd64",
+      "name": "libxcb-dri3-0",
+      "version": "1.15-1ubuntu2",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -9219,13 +9001,6 @@
       "manager": "dpkg"
     },
     {
-      "name": "libxcb-imdkit1",
-      "version": "1.0.6-1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
       "name": "libxcb-keysyms1",
       "version": "0.4.0-1build4",
       "arch": "amd64",
@@ -9240,9 +9015,23 @@
       "manager": "dpkg"
     },
     {
+      "name": "libxcb-present0",
+      "version": "1.15-1ubuntu2",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libxcb-randr0",
       "version": "1.15-1ubuntu2",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxcb-randr0",
+      "version": "1.15-1ubuntu2",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -9289,6 +9078,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libxcb-sync1",
+      "version": "1.15-1ubuntu2",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libxcb-util1",
       "version": "0.4.0-1build3",
       "arch": "amd64",
@@ -9303,16 +9099,9 @@
       "manager": "dpkg"
     },
     {
-      "name": "libxcb-xinerama0",
+      "name": "libxcb-xfixes0",
       "version": "1.15-1ubuntu2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "libxcb-xinput0",
-      "version": "1.15-1ubuntu2",
-      "arch": "amd64",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -9334,6 +9123,13 @@
       "name": "libxcb1",
       "version": "1.15-1ubuntu2",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxcb1",
+      "version": "1.15-1ubuntu2",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -9373,9 +9169,23 @@
       "manager": "dpkg"
     },
     {
+      "name": "libxdmcp6",
+      "version": "1:1.1.3-0ubuntu6",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libxext6",
       "version": "2:1.3.4-1build2",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "libxext6",
+      "version": "2:1.3.4-1build2",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -9478,6 +9288,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libxml2",
+      "version": "2.9.14+dfsg-1.3ubuntu3.6",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libxmlb2",
       "version": "0.3.18-1",
       "arch": "amd64",
@@ -9541,8 +9358,15 @@
       "manager": "dpkg"
     },
     {
+      "name": "libxshmfence1",
+      "version": "1.3-1build5",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libxslt1.1",
-      "version": "1.1.39-0exp1ubuntu0.24.04.2",
+      "version": "1.1.39-0exp1ubuntu0.24.04.3",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -9660,6 +9484,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "libzstd1",
+      "version": "1.5.5+dfsg2-2build1.1",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "libzvbi-common",
       "version": "0.2.42-2",
       "arch": "all",
@@ -9682,7 +9513,7 @@
     },
     {
       "name": "linux-firmware",
-      "version": "20240318.git3b128b60-0ubuntu2.21",
+      "version": "20240318.git3b128b60-0ubuntu2.22",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -9849,9 +9680,23 @@
       "manager": "dpkg"
     },
     {
+      "name": "lto-disabled-list",
+      "version": "47",
+      "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "m17n-db",
       "version": "1.8.5-1",
       "arch": "all",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "make",
+      "version": "4.3-4.1build2",
+      "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
@@ -9901,6 +9746,13 @@
       "name": "mesa-libgallium",
       "version": "25.0.7-0ubuntu0.24.04.2",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "mesa-libgallium",
+      "version": "25.0.7-0ubuntu0.24.04.2",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -9990,14 +9842,14 @@
     },
     {
       "name": "mutter-common",
-      "version": "46.2-1ubuntu0.24.04.13",
+      "version": "46.2-1ubuntu0.24.04.14",
       "arch": "all",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "mutter-common-bin",
-      "version": "46.2-1ubuntu0.24.04.13",
+      "version": "46.2-1ubuntu0.24.04.14",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -10088,14 +9940,14 @@
     },
     {
       "name": "network-manager",
-      "version": "1.46.0-1ubuntu2.4",
+      "version": "1.46.0-1ubuntu2.5",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "network-manager-config-connectivity-ubuntu",
-      "version": "1.46.0-1ubuntu2.4",
+      "version": "1.46.0-1ubuntu2.5",
       "arch": "all",
       "summary": "",
       "manager": "dpkg"
@@ -10150,20 +10002,6 @@
       "manager": "dpkg"
     },
     {
-      "name": "nmap",
-      "version": "7.94+git20230807.3be01efb1+dfsg-3build2",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "nmap-common",
-      "version": "7.94+git20230807.3be01efb1+dfsg-3build2",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
       "name": "ntfs-3g",
       "version": "1:2022.10.3-1.2ubuntu3",
       "arch": "amd64",
@@ -10199,7 +10037,14 @@
       "manager": "dpkg"
     },
     {
-      "name": "nvidia-driver-580-open",
+      "name": "nvidia-dkms-580",
+      "version": "580.95.05-0ubuntu0.24.04.3",
+      "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "nvidia-driver-580",
       "version": "580.95.05-0ubuntu0.24.04.3",
       "arch": "amd64",
       "summary": "",
@@ -10220,7 +10065,7 @@
       "manager": "dpkg"
     },
     {
-      "name": "nvidia-kernel-source-580-open",
+      "name": "nvidia-kernel-source-580",
       "version": "580.95.05-0ubuntu0.24.04.3",
       "arch": "amd64",
       "summary": "",
@@ -10258,6 +10103,13 @@
       "name": "ocl-icd-libopencl1",
       "version": "2.3.2-1build1",
       "arch": "amd64",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
+      "name": "ocl-icd-libopencl1",
+      "version": "2.3.2-1build1",
+      "arch": "i386",
       "summary": "",
       "manager": "dpkg"
     },
@@ -11222,7 +11074,7 @@
     },
     {
       "name": "python3-urllib3",
-      "version": "2.0.7-1ubuntu0.3",
+      "version": "2.0.7-1ubuntu0.6",
       "arch": "all",
       "summary": "",
       "manager": "dpkg"
@@ -11257,63 +11109,14 @@
     },
     {
       "name": "python3.12",
-      "version": "3.12.3-1ubuntu0.9",
+      "version": "3.12.3-1ubuntu0.10",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
     },
     {
       "name": "python3.12-minimal",
-      "version": "3.12.3-1ubuntu0.9",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "qt5-gtk-platformtheme",
-      "version": "5.15.13+dfsg-1ubuntu1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "qt6-gtk-platformtheme",
-      "version": "6.4.2+dfsg-21.1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "qt6-qpa-plugins",
-      "version": "6.4.2+dfsg-21.1build5",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "qt6-translations-l10n",
-      "version": "6.4.2-1",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "qt6-wayland",
-      "version": "6.4.2-5build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "qttranslations5-l10n",
-      "version": "5.15.13-1",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "qtwayland5",
-      "version": "5.15.13-1",
+      "version": "3.12.3-1ubuntu0.10",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -11474,7 +11277,7 @@
     },
     {
       "name": "snapd",
-      "version": "2.72+ubuntu24.04",
+      "version": "2.73+ubuntu24.04",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -11761,7 +11564,7 @@
     },
     {
       "name": "thermald",
-      "version": "2.5.6-2ubuntu0.24.04.2",
+      "version": "2.5.6-2ubuntu0.24.04.3",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -11818,13 +11621,6 @@
     {
       "name": "tracker-miner-fs",
       "version": "3.7.1-1build1",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "transmission-common",
-      "version": "4.0.5-1build5",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -12182,20 +11978,6 @@
     {
       "name": "whoopsie-preferences",
       "version": "23build3",
-      "arch": "amd64",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "wireguard",
-      "version": "1.0.20210914-1ubuntu4",
-      "arch": "all",
-      "summary": "",
-      "manager": "dpkg"
-    },
-    {
-      "name": "wireguard-tools",
-      "version": "1.0.20210914-1ubuntu4",
       "arch": "amd64",
       "summary": "",
       "manager": "dpkg"
@@ -12663,6 +12445,13 @@
       "manager": "dpkg"
     },
     {
+      "name": "zlib1g",
+      "version": "1:1.3.dfsg-3.1ubuntu2.1",
+      "arch": "i386",
+      "summary": "",
+      "manager": "dpkg"
+    },
+    {
       "name": "zstd",
       "version": "1.5.5+dfsg2-2build1.1",
       "arch": "amd64",
@@ -12686,6 +12475,12 @@
       "status": "active",
       "state": "running",
       "description": "Avahi mDNS/DNS-SD Stack"
+    },
+    {
+      "name": "bluetooth.service",
+      "status": "active",
+      "state": "running",
+      "description": "Bluetooth service"
     },
     {
       "name": "colord.service",
@@ -12808,6 +12603,12 @@
       "description": "Snap Daemon"
     },
     {
+      "name": "ssh.service",
+      "status": "active",
+      "state": "running",
+      "description": "OpenBSD Secure Shell server"
+    },
+    {
       "name": "switcheroo-control.service",
       "status": "active",
       "state": "running",
@@ -12850,12 +12651,6 @@
       "description": "Rule-based Manager for Device Events and Files"
     },
     {
-      "name": "thermald.service",
-      "status": "active",
-      "state": "running",
-      "description": "Thermal Daemon Service"
-    },
-    {
       "name": "udisks2.service",
       "status": "active",
       "state": "running",
@@ -12889,15 +12684,13 @@
   "capabilities": [
     "docker"
   ],
-  "listening_ports_sample": [
-    "code 127.0.0.1:4377"
-  ],
+  "listening_ports_sample": null,
   "docker": {
     "compose_projects": [],
     "standalone_containers_sample": {
       "Command": "\"/bin/ollama serve\"",
-      "CreatedAt": "2025-12-26 08:27:59 +0800 HKT",
-      "ID": "09d1a23935e0df13b266e47eea8e4414aee4ddbe686377461ca7fe3d93d9c4d9",
+      "CreatedAt": "2026-01-17 06:42:49 +0800 HKT",
+      "ID": "38b173f3dff1a09b6a749c83a82d9d0fe041456c50fbae9e82b7f82338679ee2",
       "Image": "ollama/ollama",
       "Labels": "org.opencontainers.image.ref.name=ubuntu,org.opencontainers.image.version=24.04",
       "LocalVolumes": "1",
@@ -12909,10 +12702,10 @@
         "os": "linux"
       },
       "Ports": "",
-      "RunningFor": "2 days ago",
+      "RunningFor": "4 hours ago",
       "Size": "0B",
       "State": "exited",
-      "Status": "Exited (0) 46 hours ago"
+      "Status": "Exited (0) 4 hours ago"
     },
     "notes": []
   }
