@@ -1,6 +1,6 @@
 {
   "schema": "pplx_infra_inventory_v2",
-  "collected_at_utc": "2026-01-17T03:05:02.853750+00:00",
+  "collected_at_utc": "2026-01-17T09:39:37.911837+00:00",
   "identity": {
     "hostname": "pegasus",
     "fqdn": null,
@@ -11,19 +11,19 @@
     "platform_release": "6.14.0-37-generic",
     "platform_version": "#37~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 10:25:38 UTC 2",
     "machine": "x86_64",
-    "python": "3.11.11",
+    "python": "3.13.11",
     "distro_id": "ubuntu",
     "distro_name": "Ubuntu 24.04.3 LTS",
     "distro_version": "24.04"
   },
-  "uptime_seconds": null,
+  "uptime_seconds": 63929,
   "cpu": {
-    "physical_cores": null,
-    "logical_cores": null,
+    "physical_cores": 8,
+    "logical_cores": 16,
     "model": "AMD Ryzen 7 7800X3D 8-Core Processor"
   },
   "memory": {
-    "total_bytes": null
+    "total_bytes": 134070243328
   },
   "gpu": {
     "devices": [
@@ -232,67 +232,200 @@
         ]
       }
     ],
-    "mounts": null
+    "mounts": [
+      {
+        "device": "/dev/nvme1n1p2",
+        "mountpoint": "/",
+        "fstype": "ext4",
+        "opts": "rw,relatime",
+        "usage_bytes": {
+          "total": 982240026624,
+          "used": 58896506880,
+          "free": 873373003776
+        }
+      },
+      {
+        "device": "/dev/loop0",
+        "mountpoint": "/snap/bare/5",
+        "fstype": "squashfs",
+        "opts": "ro,nodev,relatime,errors=continue,threads=single",
+        "usage_bytes": {
+          "total": 131072,
+          "used": 131072,
+          "free": 0
+        }
+      },
+      {
+        "device": "/dev/loop1",
+        "mountpoint": "/snap/core22/2045",
+        "fstype": "squashfs",
+        "opts": "ro,nodev,relatime,errors=continue,threads=single",
+        "usage_bytes": {
+          "total": 77594624,
+          "used": 77594624,
+          "free": 0
+        }
+      },
+      {
+        "device": "/dev/loop4",
+        "mountpoint": "/snap/gtk-common-themes/1535",
+        "fstype": "squashfs",
+        "opts": "ro,nodev,relatime,errors=continue,threads=single",
+        "usage_bytes": {
+          "total": 96206848,
+          "used": 96206848,
+          "free": 0
+        }
+      },
+      {
+        "device": "/dev/loop3",
+        "mountpoint": "/snap/gnome-42-2204/202",
+        "fstype": "squashfs",
+        "opts": "ro,nodev,relatime,errors=continue,threads=single",
+        "usage_bytes": {
+          "total": 541196288,
+          "used": 541196288,
+          "free": 0
+        }
+      },
+      {
+        "device": "/dev/loop5",
+        "mountpoint": "/snap/snap-store/1270",
+        "fstype": "squashfs",
+        "opts": "ro,nodev,relatime,errors=continue,threads=single",
+        "usage_bytes": {
+          "total": 11403264,
+          "used": 11403264,
+          "free": 0
+        }
+      },
+      {
+        "device": "/dev/loop6",
+        "mountpoint": "/snap/firmware-updater/167",
+        "fstype": "squashfs",
+        "opts": "ro,nodev,relatime,errors=continue,threads=single",
+        "usage_bytes": {
+          "total": 11796480,
+          "used": 11796480,
+          "free": 0
+        }
+      },
+      {
+        "device": "/dev/loop7",
+        "mountpoint": "/snap/snapd/24792",
+        "fstype": "squashfs",
+        "opts": "ro,nodev,relatime,errors=continue,threads=single",
+        "usage_bytes": {
+          "total": 51773440,
+          "used": 51773440,
+          "free": 0
+        }
+      },
+      {
+        "device": "/dev/loop8",
+        "mountpoint": "/snap/snapd-desktop-integration/315",
+        "fstype": "squashfs",
+        "opts": "ro,nodev,relatime,errors=continue,threads=single",
+        "usage_bytes": {
+          "total": 655360,
+          "used": 655360,
+          "free": 0
+        }
+      },
+      {
+        "device": "/dev/nvme1n1p1",
+        "mountpoint": "/boot/efi",
+        "fstype": "vfat",
+        "opts": "rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro",
+        "usage_bytes": {
+          "total": 1124999168,
+          "used": 6438912,
+          "free": 1118560256
+        }
+      },
+      {
+        "device": "/dev/loop9",
+        "mountpoint": "/snap/core22/2216",
+        "fstype": "squashfs",
+        "opts": "ro,nodev,relatime,errors=continue,threads=single",
+        "usage_bytes": {
+          "total": 77594624,
+          "used": 77594624,
+          "free": 0
+        }
+      },
+      {
+        "device": "/dev/loop10",
+        "mountpoint": "/snap/firmware-updater/210",
+        "fstype": "squashfs",
+        "opts": "ro,nodev,relatime,errors=continue,threads=single",
+        "usage_bytes": {
+          "total": 19398656,
+          "used": 19398656,
+          "free": 0
+        }
+      }
+    ]
   },
   "network": {
     "interfaces": {
-      "docker0": {
-        "mac": "ee:d9:67:82:d2:ca",
-        "ipv4": [
-          {
-            "ip": "172.17.0.1",
-            "netmask": "16"
-          }
-        ],
-        "ipv6": [
-          {
-            "ip": "fe80::ecd9:67ff:fe82:d2ca",
-            "netmask": "64"
-          }
-        ],
-        "is_up": false,
-        "speed_mbps": null
-      },
       "lo": {
         "mac": "00:00:00:00:00:00",
         "ipv4": [
           {
             "ip": "127.0.0.1",
-            "netmask": "8"
+            "netmask": "255.0.0.0"
           }
         ],
         "ipv6": [
           {
             "ip": "::1",
-            "netmask": "128"
+            "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"
           }
         ],
-        "is_up": false,
-        "speed_mbps": null
-      },
-      "wlp13s0": {
-        "mac": "dc:56:7b:2e:3d:85",
-        "ipv4": [],
-        "ipv6": [],
-        "is_up": false,
-        "speed_mbps": null
+        "is_up": true,
+        "speed_mbps": 0
       },
       "enp12s0": {
         "mac": "34:5a:60:c6:22:7c",
         "ipv4": [
           {
             "ip": "10.10.1.65",
-            "netmask": "24"
+            "netmask": "255.255.255.0"
           }
         ],
         "ipv6": [
           {
-            "ip": "fe80::365a:60ff:fec6:227c",
-            "netmask": "64"
+            "ip": "fe80::365a:60ff:fec6:227c%enp12s0",
+            "netmask": "ffff:ffff:ffff:ffff::"
           }
         ],
         "is_up": true,
         "speed_mbps": 1000
+      },
+      "docker0": {
+        "mac": "ee:d9:67:82:d2:ca",
+        "ipv4": [
+          {
+            "ip": "172.17.0.1",
+            "netmask": "255.255.0.0"
+          }
+        ],
+        "ipv6": [
+          {
+            "ip": "fe80::ecd9:67ff:fe82:d2ca%docker0",
+            "netmask": "ffff:ffff:ffff:ffff::"
+          }
+        ],
+        "is_up": false,
+        "speed_mbps": 0
+      },
+      "wlp13s0": {
+        "mac": "dc:56:7b:2e:3d:85",
+        "ipv4": [],
+        "ipv6": [],
+        "is_up": false,
+        "speed_mbps": 0
       }
     },
     "default_gateway": "10.10.1.1",
@@ -12684,7 +12817,9 @@
   "capabilities": [
     "docker"
   ],
-  "listening_ports_sample": null,
+  "listening_ports_sample": [
+    "code-585e 127.0.0.1:36349"
+  ],
   "docker": {
     "compose_projects": [],
     "standalone_containers_sample": {
@@ -12702,10 +12837,10 @@
         "os": "linux"
       },
       "Ports": "",
-      "RunningFor": "4 hours ago",
+      "RunningFor": "11 hours ago",
       "Size": "0B",
       "State": "exited",
-      "Status": "Exited (0) 4 hours ago"
+      "Status": "Exited (0) 11 hours ago"
     },
     "notes": []
   }
